@@ -12,6 +12,7 @@
 #include "AFE.h"
 #include "GPIO.h"
 #include "TM.h"
+#include "PLT.h"
 
 #if _SPI_DRIVER
 	#include "SPI.h"
@@ -29,10 +30,39 @@
 #include "A_SOFTDEBUG_DRV.h"
 #include "UserFunction.h"
 #include "UserISR.h"
+void read_temprature(void);
 
+const unsigned char temprature1_250table[120]=
+{
+61,64,66,69,71,74,77,79,82,85,88,
+91,93,96,99,102,105,108,111,114,117,119,
+122,125,128,131,134,137,139,142,145,147,150,
+153,155,158,160,163,165,167,170,172,174,176,
+179,181,183,185,187,189,190,192,194,196,197,
+199,201,202,204,205,207,208,209,211,212,213,
+214,216,217,218,219,220,221,222,223,224,225,
+226,226,227,228,229,230,230,231,232,232,233,
+234,234,235,235,236,237,237,238,238,239,239,
+239,240,240,241,241,242,242,242,243,243,243
+};
 
+unsigned char ntemp,mem_temp,r,temp_ADC;
 void main()
 {
+
+
+ S0_S1_ON_S2_OFF;
+ PLT_DAC0_Control=Enable;
+ PLT0_DAC_VALUE=0x00;
+ 
+ PLT_OPAMP_CONTROL=Enable;
+ PLT_Comparator_0_Control=Enable;
+ PLT_Comparator0_OrComparator1_Output_selection=Comparator_0_Output;
+ PLT_Comparator_0_Output_Polarity=Non_Invert;
+ //PLT_Comparator_0_Hysteresis_voltage 22;
+
+
+	
 	if(_to==0 || _pdf==0)
 	{
 		S_RAM_Init(0);			//Clear RAM0
@@ -62,24 +92,30 @@ void main()
 		//USER CODE END
 		S_Timebase_Init();		//Timebase Init
 		
-		_LED_R_ON;
+		
 		#if _BUZZ
 			_pton=1;
 		#endif
 		S_SYS_DELAY(30);
+		
 		#if _T_REF
-			R_T_ADC = T_AD;
+		ntemp=T_AD;
+		read_temprature();
+		
+	//		R_T_ADC = T_AD;
 		#endif
 		
 		#if _BUZZ
 			_pton=0;
 		#endif
+		_LED_R_ON;
 		_LED_R_OFF;
 		
 	}
 
 	while(1)
 	{
+		
 		#if _KEY
 			S_KEY_UPDATE();						//key scan
 			S_KEY_PROCESS();					//key process
@@ -105,6 +141,8 @@ void main()
 			#endif
 			//USER CODE START
 			S_USER_8MS_WORK_PERIOD();
+			ntemp=T_AD;
+		read_temprature();
 			//USER CODE END
 		}
 		if( F_ONESEC!=0 || F_SYS_SLOW!=0 )
@@ -122,6 +160,8 @@ void main()
 			S_MODE_JUDG();							//MCU mode processing
 			//USER CODE START
 			S_USER_1S_WORK_PERIOD();
+			ntemp=T_AD;
+		read_temprature();
 			//USER CODE END
 			
 			#if _DEBUG
@@ -179,6 +219,7 @@ void main()
 			}
 			#endif
 		}
+		
 	}
 }
 
@@ -205,3 +246,20 @@ DEFINE_ISR(INT1_ISR,0x0C)
 	_int1e=1;
 }
 #endif
+
+
+
+void read_temprature(void){
+	NTC_ON_OFF=1;
+temp_ADC=ntemp; 
+mem_temp=0;
+for(r=0 ; r<115;r++){
+	mem_temp=temprature1_250table[r];
+	if(mem_temp > temp_ADC ){break;}
+}
+R_T_ADC=r;
+temp_ADC=0;
+if(r>55) {F_HUSH=1;
+F_SM_ALARM=1;}
+NTC_ON_OFF=0;
+}

@@ -18,7 +18,7 @@ void S_RCC_Init()
 		_hircc=0b00000001;
 	#endif
 	
-	_wdtc =0b01010101;
+	_wdtc =0b01010111;
 
 }
 
@@ -37,7 +37,7 @@ void S_Timebase_Init()
 	_tb1e=1;
 	_tb1f=0;
 	
-	_tb0e=1;
+	_tb0e=0;
 	_tb0f=0;
 	
 	_emi=1;

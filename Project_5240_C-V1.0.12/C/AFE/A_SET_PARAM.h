@@ -2,7 +2,7 @@
 #define A_SET_PARAM_H__
 
 //OPA param
-#define C_AFE_R1			19
+#define C_AFE_R1			18
 #define C_AFE_R2			25
 #define C_AFE_R3			0
 //ISINK param

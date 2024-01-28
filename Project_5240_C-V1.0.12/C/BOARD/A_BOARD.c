@@ -39,14 +39,18 @@ void S_LED_DRV(void)
 				{
 					F_LED_ALARM_INI = 1;
 					F_LED_HL = 1;
-					_LED_R_ON;
+					//_LED_R_OFF;
 					R_LED_ALARM_DELAY = C_LED_ALARM_DELAY_H;
 				}
 				else
 				{
 					F_LED_HL = 0;
-					_LED_R_OFF;
+					_LED_R_ON;
 					R_LED_ALARM_DELAY = C_LED_ALARM_DELAY_L;
+						while(1)
+	{
+		GCC_CLRWDT();}
+					
 				}
 			}
 		}
@@ -257,7 +261,7 @@ void S_SM_T_REF(void)
 			{
 				R_SM_ALARM = R_SM_ALARM - i;
 			}
-			if(R_SM_ALARM<=C_SM_ALARM_DATA_L) 
+			if(R_SM_ALARM>=C_SM_ALARM_DATA_L) 
 			{
 				R_SM_ALARM=C_SM_ALARM_DATA_L;
 			}

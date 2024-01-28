@@ -232,7 +232,10 @@ void S_MODE_JUDG(void)
 		GCC_DELAY(10000);
 		F_NOR_CNT_MODE = 0;
 		#if	_T_REF
-			if(LED_R) R_T_ADC=T_AD;
+			if(LED_R) {	//ntemp=T_AD;
+		//read_temprature();
+				 //R_T_ADC=T_AD;
+				 }
 		#endif
 		
 		#if _BUZZ
