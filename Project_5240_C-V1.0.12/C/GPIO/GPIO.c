@@ -23,6 +23,7 @@ void S_GPIO_Init()
 	_pbs1=0b00000000;
 	
 	_ifs0=0b00100010;
+	
 
 }
 

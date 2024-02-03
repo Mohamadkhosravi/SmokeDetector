@@ -49,19 +49,9 @@ const unsigned char temprature1_250table[120]=
 unsigned char ntemp,mem_temp,r,temp_ADC;
 void main()
 {
+	unsigned char Data=0x3;
 
-
- S0_S1_ON_S2_OFF;
- PLT_DAC0_Control=Enable;
- PLT0_DAC_VALUE=0x00;
- 
- PLT_OPAMP_CONTROL=Enable;
- PLT_Comparator_0_Control=Enable;
- PLT_Comparator0_OrComparator1_Output_selection=Comparator_0_Output;
- PLT_Comparator_0_Output_Polarity=Non_Invert;
- //PLT_Comparator_0_Hysteresis_voltage 22;
-
-
+    PLT0Recive();
 	
 	if(_to==0 || _pdf==0)
 	{
@@ -89,6 +79,7 @@ void main()
 		#endif
 		//USER CODE START
 		S_USER_INIT();
+	
 		//USER CODE END
 		S_Timebase_Init();		//Timebase Init
 		
@@ -115,6 +106,7 @@ void main()
 
 	while(1)
 	{
+	
 		
 		#if _KEY
 			S_KEY_UPDATE();						//key scan
@@ -142,7 +134,8 @@ void main()
 			//USER CODE START
 			S_USER_8MS_WORK_PERIOD();
 			ntemp=T_AD;
-		read_temprature();
+		    read_temprature();
+		   
 			//USER CODE END
 		}
 		if( F_ONESEC!=0 || F_SYS_SLOW!=0 )
@@ -161,15 +154,21 @@ void main()
 			//USER CODE START
 			S_USER_1S_WORK_PERIOD();
 			ntemp=T_AD;
-		read_temprature();
+		    read_temprature();
 			//USER CODE END
 			
-			#if _DEBUG
-				S_DEBUG_Output();
-			#endif
+			
+			//#if _DEBUG
+			    S_SFUART_SEND(0);
+			    S_SFUART_SEND(PLT0Recive());
+			    S_SFUART_SEND(0);
+			   
+			    
+			//	S_DEBUG_Output();
+		   //#endif
 			#if _SOFTDEBUG
-				S_SFUART_DEAL(R_SFUART_RXDAT);
-				S_SOFTDEBUG_Output();				//smoke detector workshop debug data output
+			//	S_SFUART_DEAL(R_SFUART_RXDAT);
+			//	S_SOFTDEBUG_Output();				//smoke detector workshop debug data output
 			#endif
 			
 			F_SYS_SLOW = 0;
