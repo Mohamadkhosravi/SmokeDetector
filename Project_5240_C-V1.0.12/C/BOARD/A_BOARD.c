@@ -1,7 +1,7 @@
 #include "A_BOARD.h"
 
 
-
+extern 
 //===========================================================
 //*@brief		: Clear RAM
 //*@param[in]	: RAM_BANK 0/1
@@ -32,6 +32,7 @@ void S_LED_DRV(void)
 	{
 		if(F_LED_ALARM_INI == 1)
 		{
+			
 			--R_LED_ALARM_DELAY;
 			if(R_LED_ALARM_DELAY == 0)
 			{
@@ -47,9 +48,10 @@ void S_LED_DRV(void)
 					F_LED_HL = 0;
 					_LED_R_ON;
 					R_LED_ALARM_DELAY = C_LED_ALARM_DELAY_L;
-						while(1)
-	{
-		GCC_CLRWDT();}
+					while(1)
+					{
+					 GCC_CLRWDT();
+					}
 					
 				}
 			}

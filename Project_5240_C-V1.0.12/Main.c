@@ -13,7 +13,7 @@
 #include "GPIO.h"
 #include "TM.h"
 #include "PLT.h"
-
+#include  "stdlib.h"
 #if _SPI_DRIVER
 	#include "SPI.h"
 #elif _IIC_DRIVER
@@ -45,7 +45,7 @@ const unsigned char temprature1_250table[120]=
 234,234,235,235,236,237,237,238,238,239,239,
 239,240,240,241,241,242,242,242,243,243,243
 };
-
+ 
 unsigned char ntemp,mem_temp,r,temp_ADC;
 void main()
 {
@@ -93,7 +93,7 @@ void main()
 		ntemp=T_AD;
 		read_temprature();
 		
-	//		R_T_ADC = T_AD;
+	//	R_T_ADC = T_AD;
 		#endif
 		
 		#if _BUZZ
@@ -106,7 +106,7 @@ void main()
 
 	while(1)
 	{
-	
+   	  
 		
 		#if _KEY
 			S_KEY_UPDATE();						//key scan
@@ -115,7 +115,7 @@ void main()
 		GCC_CLRWDT();
 		if(F_SYS_SLOW)
 		{
-			GCC_CLRWDT();
+		 GCC_CLRWDT();
 		}
 		else if(F_TIMER)
 		{
@@ -138,13 +138,23 @@ void main()
 		   
 			//USER CODE END
 		}
-		if( F_ONESEC!=0 || F_SYS_SLOW!=0 )
-		{
+		
+		//	S_SFUART_SEND(0x0a);
+		//	S_SFUART_SEND(PLT0Recive()+0x30);
+		//  S_SFUART_SEND( rand());
+		//	S_SFUART_SEND(0x0a);
+
+		
+			
+			
+	if( F_ONESEC!=0 || F_SYS_SLOW!=0 )
+	{
 			F_ONESEC=0;
 			S_HUSH_COUNT();
 			S_READ_SMOKE_DATA();					//READ SMOKE AD
 			S_SM_BD_ZERO();							//SMOKE BD
 			S_SM_BD_ALARM();
+			
 			#if _CHECK_IR_ERR
 				S_SM_IR_ERR_CHECK();				//SMOKE ERROR CHECK
 			#endif
@@ -155,15 +165,12 @@ void main()
 			S_USER_1S_WORK_PERIOD();
 			ntemp=T_AD;
 		    read_temprature();
-			//USER CODE END
-			
-			
+			//USER CODE END	
 			//#if _DEBUG
-			    S_SFUART_SEND(0);
-			    S_SFUART_SEND(PLT0Recive());
-			    S_SFUART_SEND(0);
-			   
-			    
+			  S_SFUART_SEND(0x0a);
+			 //S_SFUART_SEND(PLT0Recive()+0x30);
+			S_SFUART_SEND( +0x30);
+			 // S_SFUART_SEND(0x0a);
 			//	S_DEBUG_Output();
 		   //#endif
 			#if _SOFTDEBUG
@@ -250,15 +257,16 @@ DEFINE_ISR(INT1_ISR,0x0C)
 
 void read_temprature(void){
 	NTC_ON_OFF=1;
-temp_ADC=ntemp; 
-mem_temp=0;
-for(r=0 ; r<115;r++){
-	mem_temp=temprature1_250table[r];
-	if(mem_temp > temp_ADC ){break;}
-}
-R_T_ADC=r;
-temp_ADC=0;
-if(r>55) {F_HUSH=1;
-F_SM_ALARM=1;}
-NTC_ON_OFF=0;
+	temp_ADC=ntemp; 
+	mem_temp=0;
+	for(r=0 ; r<115;r++)
+	{
+		mem_temp=temprature1_250table[r];
+		if(mem_temp > temp_ADC ){break;}
+	}
+	R_T_ADC=r;
+	temp_ADC=0;
+	if(r>55) {F_HUSH=1;
+	F_SM_ALARM=1;}
+	NTC_ON_OFF=0;
 }

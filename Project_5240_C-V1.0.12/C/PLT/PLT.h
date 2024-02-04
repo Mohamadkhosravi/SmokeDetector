@@ -41,7 +41,7 @@ enum
 
 /********************************
 D5~D0: PLT DAC0 output control code
-PLTDAC0O= ( DAC VDD/26)√ó PLTDA0L[5:0]*/
+PLTDAC0O= ( DAC VDD/26)◊ PLTDA0L[5:0]*/
 #define PLT_DAC0_VALUE	_pltda0l
 #define PLT_DAC1_VALUE	_pltda1l
 #define PLT_DAC2_VALUE	_pltda2l
@@ -56,9 +56,9 @@ PLTDAC0O= ( DAC VDD/26)√ó PLTDA0L[5:0]*/
 /*********************************
 PLT Comparator 0 debounced output
 The PLTC0O is de-bounced version of PLTC0OUT
-If PLTC0POL=0, the PLTC0O outputs ‚Äú1‚Äù only when the current and the previous N
-samples of PLTC0OUT are all ‚Äú1‚Äù. If PLTC0POL=1, The PLTC0O outputs ‚Äú0‚Äù only
-when the current and the previous N samples of PLTC0OUT are all ‚Äú0‚Äù. The sampling
+If PLTC0POL=0, the PLTC0O outputs ì1î only when the current and the previous N
+samples of PLTC0OUT are all ì1î. If PLTC0POL=1, The PLTC0O outputs ì0î only
+when the current and the previous N samples of PLTC0OUT are all ì0î. The sampling
 frequency is depend on the PLTC0DEB[1:0] bit configuration.*/
 #define PLT_Comparator_0_Debounced_Output 	_pltc0o
 #define PLT_Comparator_1_Debounced_Output	_pltc1o
