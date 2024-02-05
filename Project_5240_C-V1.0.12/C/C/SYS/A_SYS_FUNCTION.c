@@ -6,7 +6,7 @@
 //*@param[in]	: None
 //*@retval		: None
 //===========================================================
-void S_SysTimeTask(void)
+char S_SysTimeTask(int time)
 {
 	
 	R_LONG_DELAY--;

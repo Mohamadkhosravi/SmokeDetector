@@ -120,7 +120,7 @@ void main()
 		else if(F_TIMER)
 		{
 			F_TIMER=0;
-			S_SysTimeTask();
+			S_SysTimeTask(122);
 			S_LED_DRV();							//led driver
 			#if _BUZZ
 				S_BUZZ_DRV();						//led driver

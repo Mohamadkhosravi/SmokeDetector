@@ -33,8 +33,8 @@ void S_USER_INIT()
     S_SYS_DELAY(100);
     srand(S_READ_ADC(3));//read adc3 and pass to random input	
     S_SYS_DELAY(100);
-	S_SFUART_SEND(0x0a);
-	S_SFUART_SEND(rand());
+//	S_SFUART_SEND(0x0a);
+//	S_SFUART_SEND(rand());
    for (i=0;i<=(rand()*10)+1000;i++)
    {
 	GCC_CLRWDT();
@@ -97,6 +97,11 @@ void S_USER_8MS_WORK_PERIOD()
 void S_USER_1S_WORK_PERIOD()
 {
 	//USER 1s CODE START
+	   	  //	S_SFUART_SEND(0x0a);
+		//	S_SFUART_SEND(F_SYS_SLOW+0x30);
+			//S_SFUART_SEND(0x0a);
+		
+	
 	if((R_LED_ALARM_DELAY)&&(F_LED_HL))
 	{
 		
@@ -112,13 +117,13 @@ void S_USER_1S_WORK_PERIOD()
 		}
 	}
 	
-    S_SFUART_SEND(0x0a);
-    S_SFUART_SEND(PLT0Recive()+0x30);
+   // S_SFUART_SEND(0x0a);
+ //   S_SFUART_SEND(PLT0Recive()+0x30);
     while(PLT0Recive()==0)
     { 
     	_LED_R_OFF;
-    	S_SFUART_SEND(0x0a);
-		S_SFUART_SEND(PLT0Recive()+0x30);
+    /*	S_SFUART_SEND(0x0a);
+		S_SFUART_SEND(PLT0Recive()+0x30);*/
 		GCC_CLRWDT();
        	
     }

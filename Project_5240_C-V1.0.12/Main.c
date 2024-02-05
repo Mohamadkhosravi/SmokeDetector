@@ -106,21 +106,38 @@ void main()
 
 	while(1)
 	{
-   	  
+  
 		
 		#if _KEY
 			S_KEY_UPDATE();						//key scan
 			S_KEY_PROCESS();					//key process
 		#endif
 		GCC_CLRWDT();
+	
+	     if(F_SM_ALARM)
+		{
+			
+			
+			R_LED_ALARM_DELAY=1;
+			F_LED_HL=1;
+		   S_USER_1S_WORK_PERIOD();
+		}
+		
+		if( S_SysTimeTask(244))
+		{
+			S_SFUART_SEND(0x65);
+		}
 		if(F_SYS_SLOW)
 		{
+		 S_SFUART_SEND(0x61);
 		 GCC_CLRWDT();
-		}
+		}		
 		else if(F_TIMER)
 		{
+				S_SFUART_SEND(0x62);
 			F_TIMER=0;
-			S_SysTimeTask();
+		//	S_SysTimeTask();
+		    S_SysTimeTask(122);
 			S_LED_DRV();							//led driver
 			#if _BUZZ
 				S_BUZZ_DRV();						//led driver
@@ -143,12 +160,15 @@ void main()
 		//	S_SFUART_SEND(PLT0Recive()+0x30);
 		//  S_SFUART_SEND( rand());
 		//	S_SFUART_SEND(0x0a);
-
 		
+			S_SFUART_SEND(0x40);
+			S_SFUART_SEND(F_SYS_SLOW+0x30);
+			S_SFUART_SEND(0x0a);
+	
 			
-			
-	if( F_ONESEC!=0 || F_SYS_SLOW!=0 )
-	{
+		if(( F_ONESEC!=0 || F_SYS_SLOW!=0 ))
+		{
+		    S_SFUART_SEND(0x63);	
 			F_ONESEC=0;
 			S_HUSH_COUNT();
 			S_READ_SMOKE_DATA();					//READ SMOKE AD
@@ -167,9 +187,9 @@ void main()
 		    read_temprature();
 			//USER CODE END	
 			//#if _DEBUG
-			  S_SFUART_SEND(0x0a);
+		//	  S_SFUART_SEND(0x0a);
 			 //S_SFUART_SEND(PLT0Recive()+0x30);
-			S_SFUART_SEND( +0x30);
+		//	S_SFUART_SEND( +0x30);
 			 // S_SFUART_SEND(0x0a);
 			//	S_DEBUG_Output();
 		   //#endif
@@ -215,19 +235,20 @@ void main()
 					_fsiden = 0;
 					_halt();
 				}
-				else
+				else if(S_SysTimeTask(244))
 				{
 					_fhiden = 1;
 					_fsiden = 1;
-					_halt();
+				    _halt();
 				}
 			#if _KEY
 			}
 			#endif
 		}
-		
+		  
 	}
 }
+
 
 
 //===========================================================

@@ -6,15 +6,19 @@
 //*@param[in]	: None
 //*@retval		: None
 //===========================================================
-void S_SysTimeTask(void)
+char S_SysTimeTask(int time)
 {
 	
 	R_LONG_DELAY--;
 	if(R_LONG_DELAY == 0)
 	{
-		R_LONG_DELAY = C_LONG_DELAY;				//122 *8.192  = 1s
-		F_ONESEC = 1;
+	//	R_LONG_DELAY = C_LONG_DELAY;				//122 *8.192  = 1s
+	  R_LONG_DELAY = time;
+	  F_ONESEC = 1;
+	  return 1;
 	}
+	return 0;
+	
 }
 
 

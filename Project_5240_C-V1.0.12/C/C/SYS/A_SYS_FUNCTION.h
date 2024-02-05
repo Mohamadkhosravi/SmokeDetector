@@ -14,7 +14,7 @@
 //1s
 #define C_LONG_DELAY	122
 
-void S_SysTimeTask(void);
+char S_SysTimeTask(int time);
 #if _DEBUG
 	void S_RS232_SEND(unsigned char R_RS_DATA);
 	void S_DEBUG_Output(void);
