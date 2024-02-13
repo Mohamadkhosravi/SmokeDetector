@@ -12,8 +12,8 @@
 #include "AFE.h"
 #include "GPIO.h"
 #include "TM.h"
-#include "PLT.h"
-#include  "stdlib.h"
+#include "A_USE_LIB.h"
+
 #if _SPI_DRIVER
 	#include "SPI.h"
 #elif _IIC_DRIVER
@@ -30,29 +30,14 @@
 #include "A_SOFTDEBUG_DRV.h"
 #include "UserFunction.h"
 #include "UserISR.h"
-void read_temprature(void);
+#include "PLT.h"
 
-const unsigned char temprature1_250table[120]=
-{
-61,64,66,69,71,74,77,79,82,85,88,
-91,93,96,99,102,105,108,111,114,117,119,
-122,125,128,131,134,137,139,142,145,147,150,
-153,155,158,160,163,165,167,170,172,174,176,
-179,181,183,185,187,189,190,192,194,196,197,
-199,201,202,204,205,207,208,209,211,212,213,
-214,216,217,218,219,220,221,222,223,224,225,
-226,226,227,228,229,230,230,231,232,232,233,
-234,234,235,235,236,237,237,238,238,239,239,
-239,240,240,241,241,242,242,242,243,243,243
-};
- 
-unsigned char ntemp,mem_temp,r,temp_ADC;
+
+
+
+
 void main()
 {
-	unsigned char Data=0x3;
-
-    PLT0Recive();
-	
 	if(_to==0 || _pdf==0)
 	{
 		S_RAM_Init(0);			//Clear RAM0
@@ -79,102 +64,99 @@ void main()
 		#endif
 		//USER CODE START
 		S_USER_INIT();
-	
 		//USER CODE END
 		S_Timebase_Init();		//Timebase Init
 		
-		
+		_LED_R_ON;
 		#if _BUZZ
 			_pton=1;
 		#endif
 		S_SYS_DELAY(30);
-		
 		#if _T_REF
-		ntemp=T_AD;
-		read_temprature();
-		
-	//	R_T_ADC = T_AD;
+			R_T_ADC = T_AD;
 		#endif
 		
 		#if _BUZZ
 			_pton=0;
 		#endif
-		_LED_R_ON;
 		_LED_R_OFF;
 		
 	}
 
+
 	while(1)
 	{
-  
-		
 		#if _KEY
 			S_KEY_UPDATE();						//key scan
 			S_KEY_PROCESS();					//key process
 		#endif
 		GCC_CLRWDT();
-	
-	     if(F_SM_ALARM)
-		{
-			
-			
-			R_LED_ALARM_DELAY=1;
-			F_LED_HL=1;
-		   S_USER_1S_WORK_PERIOD();
-		}
+	/*	ntemp=T_AD;
+		read_temprature();*/
 		
-		if( S_SysTimeTask(244))
-		{
-			S_SFUART_SEND(0x65);
-		}
+		
+		
+		/*	if((F_LED_ALARM == 1)){
+	
+			   
+	         	while(1)
+				{
+				 _LED_R_ON;	
+				 GCC_CLRWDT();
+				  plt=PLT0Recive();
+			  	S_SFUART_SEND(0x46);
+				S_SFUART_SEND(plt+0x30);
+				 if(plt==0){ _LED_R_OFF;	break;}
+				}
+			}*/
+		   /* if(!PLT0Recive())
+			{ 
+		    	while(1){
+					_LED_R_OFF;
+					S_SFUART_SEND(0x46);
+					S_SFUART_SEND(0x0a);
+					S_SFUART_SEND(PLT0Recive()+0x30);
+					GCC_CLRWDT();
+					F_LED_ALARM =0;
+			    	F_TIMER=0;
+				}
+				
+			}	*/
+		
+			/*	S_SFUART_SEND(0x0a);
+				S_SFUART_SEND(0x45);
+				S_SFUART_SEND(PLT0Recive()+0x30);
+				S_SFUART_SEND(0x0a);*/
+		
 		if(F_SYS_SLOW)
 		{
-		 S_SFUART_SEND(0x61);
-		 GCC_CLRWDT();
-		}		
+			GCC_CLRWDT();
+		}
 		else if(F_TIMER)
 		{
-				S_SFUART_SEND(0x62);
 			F_TIMER=0;
-		//	S_SysTimeTask();
-		    S_SysTimeTask(122);
+			S_SysTimeTask();
 			S_LED_DRV();							//led driver
 			#if _BUZZ
 				S_BUZZ_DRV();						//led driver
 			#endif
-			#if _SOFTDEBUG
+		/*	#if _SOFTDEBUG
 				if(R_UART_RUNCNT!=0)
 				{
 					R_UART_RUNCNT--;
 				}
-			#endif
+			#endif*/
 			//USER CODE START
 			S_USER_8MS_WORK_PERIOD();
-			ntemp=T_AD;
-		    read_temprature();
-		   
 			//USER CODE END
 		}
-		
-		//	S_SFUART_SEND(0x0a);
-		//	S_SFUART_SEND(PLT0Recive()+0x30);
-		//  S_SFUART_SEND( rand());
-		//	S_SFUART_SEND(0x0a);
-		
-			S_SFUART_SEND(0x40);
-			S_SFUART_SEND(F_SYS_SLOW+0x30);
-			S_SFUART_SEND(0x0a);
-	
-			
-		if(( F_ONESEC!=0 || F_SYS_SLOW!=0 ))
+		if( F_ONESEC!=0 || F_SYS_SLOW!=0 )
 		{
-		    S_SFUART_SEND(0x63);	
 			F_ONESEC=0;
 			S_HUSH_COUNT();
 			S_READ_SMOKE_DATA();					//READ SMOKE AD
 			S_SM_BD_ZERO();							//SMOKE BD
 			S_SM_BD_ALARM();
-			
 			#if _CHECK_IR_ERR
 				S_SM_IR_ERR_CHECK();				//SMOKE ERROR CHECK
 			#endif
@@ -183,20 +165,15 @@ void main()
 			S_MODE_JUDG();							//MCU mode processing
 			//USER CODE START
 			S_USER_1S_WORK_PERIOD();
-			ntemp=T_AD;
-		    read_temprature();
-			//USER CODE END	
-			//#if _DEBUG
-		//	  S_SFUART_SEND(0x0a);
-			 //S_SFUART_SEND(PLT0Recive()+0x30);
-		//	S_SFUART_SEND( +0x30);
-			 // S_SFUART_SEND(0x0a);
-			//	S_DEBUG_Output();
-		   //#endif
-			#if _SOFTDEBUG
-			//	S_SFUART_DEAL(R_SFUART_RXDAT);
-			//	S_SOFTDEBUG_Output();				//smoke detector workshop debug data output
+			//USER CODE END
+		/*	
+			#if _DEBUG
+				S_DEBUG_Output();
 			#endif
+			#if _SOFTDEBUG
+				S_SFUART_DEAL(R_SFUART_RXDAT);
+				S_SOFTDEBUG_Output();				//smoke detector workshop debug data output
+			#endif*/
 			
 			F_SYS_SLOW = 0;
 			#if _KEY
@@ -235,20 +212,18 @@ void main()
 					_fsiden = 0;
 					_halt();
 				}
-				else if(S_SysTimeTask(244))
+				else
 				{
 					_fhiden = 1;
 					_fsiden = 1;
-				    _halt();
+					_halt();
 				}
 			#if _KEY
 			}
 			#endif
 		}
-		  
 	}
 }
-
 
 
 //===========================================================
@@ -276,18 +251,4 @@ DEFINE_ISR(INT1_ISR,0x0C)
 
 
 
-void read_temprature(void){
-	NTC_ON_OFF=1;
-	temp_ADC=ntemp; 
-	mem_temp=0;
-	for(r=0 ; r<115;r++)
-	{
-		mem_temp=temprature1_250table[r];
-		if(mem_temp > temp_ADC ){break;}
-	}
-	R_T_ADC=r;
-	temp_ADC=0;
-	if(r>55) {F_HUSH=1;
-	F_SM_ALARM=1;}
-	NTC_ON_OFF=0;
-}
+

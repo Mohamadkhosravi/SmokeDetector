@@ -6,19 +6,15 @@
 //*@param[in]	: None
 //*@retval		: None
 //===========================================================
-char S_SysTimeTask(int time)
+void S_SysTimeTask(void)
 {
 	
 	R_LONG_DELAY--;
 	if(R_LONG_DELAY == 0)
 	{
-	//	R_LONG_DELAY = C_LONG_DELAY;				//122 *8.192  = 1s
-	  R_LONG_DELAY = time;
-	  F_ONESEC = 1;
-	  return 1;
+		R_LONG_DELAY = C_LONG_DELAY;				//122 *8.192  = 1s
+		F_ONESEC = 1;
 	}
-	return 0;
-	
 }
 
 
@@ -145,6 +141,7 @@ void S_SYS_DELAY(unsigned char R_DELAY_CNT)
 void S_MODE_JUDG(void)
 {
 	unsigned char	R_MODE_FG = 0;
+	static unsigned int	cunter = 0;
 
 	if(F_TEST == 1 || F_SM_ALARM == 1)	R_MODE_FG = 1;	//TEST OR ALARM MODE
 	if(F_SM_BD_OK == 0)					R_MODE_FG = 2;	//BD ERROR MODE
@@ -216,7 +213,12 @@ void S_MODE_JUDG(void)
 				{
 					F_NOR_CNT_MODE = 1;
 					R_NOR_DELAY = 0;
-					_LED_R_ON;
+					cunter++;
+					if(cunter>2){
+							_LED_R_ON;
+							cunter=0;
+						}
+			
 					if(F_BAT_L == 1)		//LOW BATTERY MODE
 					{
 						#if _BUZZ
@@ -236,11 +238,7 @@ void S_MODE_JUDG(void)
 		GCC_DELAY(10000);
 		F_NOR_CNT_MODE = 0;
 		#if	_T_REF
-			if(LED_R) {
-			//ntemp=T_AD;
-			//read_temprature();
-			//R_T_ADC=T_AD;
-				 }
+			if(LED_R) R_T_ADC=T_AD;
 		#endif
 		
 		#if _BUZZ

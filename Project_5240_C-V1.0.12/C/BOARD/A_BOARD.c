@@ -1,7 +1,7 @@
 #include "A_BOARD.h"
 
 
-extern 
+
 //===========================================================
 //*@brief		: Clear RAM
 //*@param[in]	: RAM_BANK 0/1
@@ -28,40 +28,46 @@ void S_RAM_Init(unsigned char RAM_BANK)
 //===========================================================
 void S_LED_DRV(void)
 {
+	static int cunter=0;
+	static int flag=0;
 	if(F_LED_ALARM == 1)
 	{
 		if(F_LED_ALARM_INI == 1)
 		{
-			
 			--R_LED_ALARM_DELAY;
 			if(R_LED_ALARM_DELAY == 0)
 			{
 				if(F_LED_HL == 0)
 				{
-					F_LED_ALARM_INI = 1;
-					F_LED_HL = 1;
-					//_LED_R_OFF;
-					R_LED_ALARM_DELAY = C_LED_ALARM_DELAY_H;
+					
+			    
+						F_LED_ALARM_INI = 1;
+						F_LED_HL = 1;
+						
+					
+						R_LED_ALARM_DELAY = C_LED_ALARM_DELAY_H;
+					
+						
+						 
+						  		_LED_R_ON;
+					
 				}
 				else
 				{
 					F_LED_HL = 0;
-					_LED_R_ON;
+					_LED_R_OFF;
 					R_LED_ALARM_DELAY = C_LED_ALARM_DELAY_L;
-					while(1)
-					{
-					 GCC_CLRWDT();
-					}
-					
 				}
 			}
 		}
 		else
 		{
+		flag=0;
 			F_LED_ALARM_INI = 1;
 			F_LED_HL = 1;
 			_LED_R_ON;
 			R_LED_ALARM_DELAY = C_LED_ALARM_DELAY_H;
+		
 		}
 	}
 }
@@ -263,7 +269,7 @@ void S_SM_T_REF(void)
 			{
 				R_SM_ALARM = R_SM_ALARM - i;
 			}
-			if(R_SM_ALARM>=C_SM_ALARM_DATA_L) 
+			if(R_SM_ALARM<=C_SM_ALARM_DATA_L) 
 			{
 				R_SM_ALARM=C_SM_ALARM_DATA_L;
 			}

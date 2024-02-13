@@ -15,7 +15,7 @@
 
 #define _RD_ADC_SET_AN0		{ _sadc1 = 0b00000011; _sadc0 = 0b00000000; }
 
-#define	_RD_ADC_SET_AN1     { _sadc1 = 0b00001001;_sadc0 = 0b00000001; }
+#define	_RD_ADC_SET_AN1     { _sadc1 = 0b00001000;_sadc0 = 0b00000001; }
 
 #define _RD_ADC_SET_AN2		{ _sadc1 = 0b00000011; _sadc0 = 0b00000010; }
 

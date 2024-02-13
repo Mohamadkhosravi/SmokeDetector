@@ -1,536 +1,515 @@
 
 Linker Version 8.7.7.220718
-Input Object File: c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\ADC.OBJ
-Input Object File: c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\AFE.OBJ
-Input Object File: c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\A_BOARD.OBJ
-Input Object File: c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\GPIO.OBJ
-Input Object File: c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\A_KEY_DRV.OBJ
-Input Object File: c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\RCC.OBJ
-Input Object File: c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\A_SOFTDEBUG_DRV.OBJ
-Input Object File: c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\A_SYS_FUNCTION.OBJ
-Input Object File: c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\TM.OBJ
-Input Object File: c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\A_VAL_DEFINE.OBJ
-Input Object File: c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\MAIN.OBJ
-Input Object File: c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\USERFUNCTION.OBJ
-Input Object File: c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\USERISR.OBJ
-Input Object File: c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\PLT.OBJ
-Input Object File: c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\STARTUP1_L.OBJ
+Input Object File: c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\ADC.OBJ
+Input Object File: c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\AFE.OBJ
+Input Object File: c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\A_BOARD.OBJ
+Input Object File: c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\GPIO.OBJ
+Input Object File: c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\A_KEY_DRV.OBJ
+Input Object File: c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\RCC.OBJ
+Input Object File: c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\A_SOFTDEBUG_DRV.OBJ
+Input Object File: c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\A_SYS_FUNCTION.OBJ
+Input Object File: c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\TM.OBJ
+Input Object File: c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\A_VAL_DEFINE.OBJ
+Input Object File: c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\MAIN.OBJ
+Input Object File: c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\USERFUNCTION.OBJ
+Input Object File: c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\USERISR.OBJ
+Input Object File: c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\STARTUP1_L.OBJ
+Input Object File: c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\PLT.OBJ
 
 Input Library File: C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB
 Input Library File: C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\v3_lmrsc.lib
-Input Library File: C:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\LIB\A_SM_5240_C_V1.0.12.lib
+Input Library File: C:\users\tech\desktop\testprj\project_5240_c-v1.0.12\LIB\A_SM_5240_C_V1.0.12.lib
 
 
      Bank    Start     End      Length     Class    AvgIns    Name
-     00h     0000h     0000h    0001h      CODE               @code (c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\MAIN.OBJ)
-     00h     0001h     0006h    0006h      CODE               _S_ADC_Init (c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\ADC.OBJ)
-     00h     0007h     000bh    0005h      CODE               _S_SM_ISINK0_ON (c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\AFE.OBJ)
-     00h     000ch     000fh    0004h      CODE               @INT1_ISR_code (c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\MAIN.OBJ)
-     00h     0010h     0030h    0021h      CODE               @start (c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\MAIN.OBJ)
-     00h     0031h     0033h    0003h      CODE               _S_SM_ISINK0_OFF (c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\AFE.OBJ)
-     00h     0034h     0037h    0004h      CODE               @TB1_ISR_code (c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\MAIN.OBJ)
-     00h     0038h     0208h    01d1h      CODE               cs (C:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\LIB\A_SM_5240_C_V1.0.12.lib)
-     00h     0209h     0244h    003ch      CODE               @crom (c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\MAIN.OBJ)
-     00h     0245h     02a4h    0060h      CODE               _S_READ_ADC (c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\ADC.OBJ)
-     00h     02a5h     02c3h    001fh      CODE               _S_ADJ_OPA0 (c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\AFE.OBJ)
-     00h     02c4h     02e2h    001fh      CODE               _S_ADJ_OPA1 (c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\AFE.OBJ)
-     00h     02e3h     02fch    001ah      CODE               _S_OPA_Init (c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\AFE.OBJ)
-     00h     02fdh     0301h    0005h      CODE               _S_SM_ISINK1_ON (c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\AFE.OBJ)
-     00h     0302h     0304h    0003h      CODE               _S_SM_ISINK1_OFF (c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\AFE.OBJ)
-     00h     0305h     0308h    0004h      CODE               _S_SM_OPA_ON (c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\AFE.OBJ)
-     00h     0309h     030ch    0004h      CODE               _S_SM_OPA_OFF (c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\AFE.OBJ)
-     00h     030dh     0318h    000ch      CODE               _S_SM_TX0_DELAY (c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\AFE.OBJ)
-     00h     0319h     0324h    000ch      CODE               _S_SM_TX1_DELAY (c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\AFE.OBJ)
-     00h     0325h     0330h    000ch      CODE               _S_OPA_STATIME (c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\AFE.OBJ)
-     00h     0331h     0338h    0008h      CODE               _S_BAT_CK_DELAY (c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\AFE.OBJ)
-     00h     0339h     0347h    000fh      CODE               _S_RAM_Init (c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\A_BOARD.OBJ)
-     00h     0348h     0362h    001bh      CODE               _S_LED_DRV (c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\A_BOARD.OBJ)
-     00h     0363h     036ah    0008h      CODE               _S_SM_INIT (c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\A_BOARD.OBJ)
-     00h     036bh     037bh    0011h      CODE               _S_BOARD_INI (c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\A_BOARD.OBJ)
-     00h     037ch     0391h    0016h      CODE               _S_HUSH_COUNT (c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\A_BOARD.OBJ)
-     00h     0392h     03b0h    001fh      CODE               _S_BAT_CHECK (c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\A_BOARD.OBJ)
-     00h     03b1h     03b9h    0009h      CODE               _S_V_CONVER (c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\A_BOARD.OBJ)
-     00h     03bah     03dch    0023h      CODE               _S_SM_T_REF (c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\A_BOARD.OBJ)
-     00h     03ddh     03eeh    0012h      CODE               _S_WR_EE (c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\A_BOARD.OBJ)
-     00h     03efh     0404h    0016h      CODE               _S_GPIO_Init (c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\GPIO.OBJ)
-     00h     0405h     0405h    0001h      CODE               _S_KEY_Init (c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\A_KEY_DRV.OBJ)
-     00h     0406h     041ch    0017h      CODE               _S_KEY_UPDATE (c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\A_KEY_DRV.OBJ)
-     00h     041dh     042dh    0011h      CODE               _S_KEY_PROCESS (c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\A_KEY_DRV.OBJ)
-     00h     042eh     0433h    0006h      CODE               _S_RCC_Init (c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\RCC.OBJ)
-     00h     0434h     043fh    000ch      CODE               _S_Timebase_Init (c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\RCC.OBJ)
-     00h     0440h     044ch    000dh      CODE               _S_SFUART_Init (c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\A_SOFTDEBUG_DRV.OBJ)
-     00h     044dh     0470h    0024h      CODE               _S_SFUART_SEND (c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\A_SOFTDEBUG_DRV.OBJ)
-     00h     0471h     0495h    0025h      CODE               _S_SFUART_RXINT (c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\A_SOFTDEBUG_DRV.OBJ)
-     00h     0496h     0527h    0092h      CODE               _S_SFUART_DEAL (c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\A_SOFTDEBUG_DRV.OBJ)
-     00h     0528h     0560h    0039h      CODE               _S_SOFTDEBUG_Output (c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\A_SOFTDEBUG_DRV.OBJ)
-     00h     0561h     056fh    000fh      CODE               _S_SysTimeTask (c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\A_SYS_FUNCTION.OBJ)
-     00h     0570h     058dh    001eh      CODE               _S_RS232_SEND (c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\A_SYS_FUNCTION.OBJ)
-     00h     058eh     0591h    0004h      CODE               _S_CLR_OUTPUT (c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\A_SYS_FUNCTION.OBJ)
-     00h     0592h     059eh    000dh      CODE               _S_SYS_DELAY (c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\A_SYS_FUNCTION.OBJ)
-     00h     059fh     05e9h    004bh      CODE               _S_MODE_JUDG (c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\A_SYS_FUNCTION.OBJ)
-     00h     05eah     064dh    0064h      CODE               _S_DEBUG_Output (c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\A_SYS_FUNCTION.OBJ)
-     00h     064eh     0656h    0009h      CODE               _S_PTM_Init (c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\TM.OBJ)
-     00h     0657h     0662h    000ch      CODE               _S_BUZZ_Init (c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\TM.OBJ)
-     00h     0663h     066eh    000ch      CODE               _S_STM_Init (c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\TM.OBJ)
-     00h     066fh     0673h    0005h      CODE               _TB1_ISR (c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\MAIN.OBJ)
-     00h     0674h     068eh    001bh      CODE               _INT1_ISR (c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\MAIN.OBJ)
-     00h     068fh     06bch    002eh      CODE               _read_temprature (c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\MAIN.OBJ)
-     00h     06bdh     0759h    009dh      CODE               _main (c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\MAIN.OBJ)
-     00h     075ah     07a8h    004fh      CODE               _S_USER_INIT (c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\USERFUNCTION.OBJ)
-     00h     07a9h     07a9h    0001h      CODE               _S_USER_8MS_WORK_PERIOD (c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\USERFUNCTION.OBJ)
-     00h     07aah     07c0h    0017h      CODE               _S_USER_1S_WORK_PERIOD (c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\USERFUNCTION.OBJ)
-     00h     07c1h     07cfh    000fh      CODE               _PLT0Recive (c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\PLT.OBJ)
-     00h     07d0h     07d0h    0001h      CODE               @ROMDATA_BASE (c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\STARTUP1_L.OBJ)
-     00h     07d1h     07dah    000ah      CODE               __DELAYX (C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
-     00h     07dbh     07e8h    000eh      CODE               _builtin_holtek_delay_isr00 (C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
-     00h     07e9h     07efh    0007h      CODE               _srand (C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\v3_lmrsc.lib)
-     00h     07f0h     0824h    0035h      CODE               _rand (C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\v3_lmrsc.lib)
-     00h     0825h     0843h    001fh      CODE               _builtin_holtek_mulsi3_isr00 (C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
-     00h     0844h     0851h    000eh      CODE               _CROM2PROM (CROM2PROM)
-     00h     0080h     0081h    0002h      DATA     2         @BITDATASEC (c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\STARTUP1_L.OBJ)
-     00h     0082h     0082h    0001h      DATA     140       @data_ra (C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
-     00h     0083h     0083h    0001h      DATA     58        @data_rb (C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
-     00h     0084h     0084h    0001h      DATA     31        @data_rc (C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
-     00h     0085h     0085h    0001h      DATA     18        @data_rd (C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
-     00h     0086h     0086h    0001h      DATA     13        @data_re (C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
-     00h     0087h     0087h    0001h      DATA     6         @data_rf (C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
-     00h     0088h     0088h    0001h      DATA     4         @data_rg (C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
-     00h     0089h     00b7h    002fh      DATA     5.7234    ds (C:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\LIB\A_SM_5240_C_V1.0.12.lib)
-     00h     00b8h     00b8h    0001h      DATA     3         @data_ra0c (isr:ra~rh)
-     00h     00b9h     00b9h    0001h      DATA     2         @data_r134 (isr:ra~rh)
-     00h     00bah     00bah    0001h      DATA     2         @data_r234 (isr:ra~rh)
-     00h     00bbh     00bbh    0001h      DATA     2         @data_r10c (isr:ra~rh)
-     00h     00bch     00bch    0001h      DATA     2         @data_r20c (isr:ra~rh)
-     00h     00cdh     00cdh    0001h      DATA     25        @HCCINIT0_R_SYS_FG (c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\A_VAL_DEFINE.OBJ)
-     00h     00ceh     00ceh    0001h      DATA     18        @HCCINIT0_R_BOARD_FG (c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\A_VAL_DEFINE.OBJ)
-     00h     00cfh     00cfh    0001h      DATA     16        @HCCINIT0_R_EE_ADDR (c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\A_VAL_DEFINE.OBJ)
-     00h     00d0h     00d0h    0001h      DATA     16        @HCCINIT0_R_EE_DATA (c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\A_VAL_DEFINE.OBJ)
-     00h     00d1h     00d1h    0001h      DATA     14        @HCCINIT0_R_LED_ALARM_FG (c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\A_VAL_DEFINE.OBJ)
-     00h     00d2h     00d2h    0001h      DATA     10        @HCCINIT0_R_KEY1_STATE (c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\A_VAL_DEFINE.OBJ)
-     00h     00d3h     00d3h    0001h      DATA     8         @HCCINIT0_R_SYS_MODE_FG (c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\A_VAL_DEFINE.OBJ)
-     00h     00d4h     00d4h    0001h      DATA     7         @HCCINIT0_R_LED_ALARM_DELAY (c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\A_VAL_DEFINE.OBJ)
-     00h     00d5h     00d5h    0001h      DATA     5         @HCCINIT0_R_UART_RUNCNT (c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\A_VAL_DEFINE.OBJ)
-     00h     00d6h     00d6h    0001h      DATA     5         @HCCINIT0_R_BAT_CK_SPACE (c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\A_VAL_DEFINE.OBJ)
-     00h     00d7h     00d7h    0001h      DATA     5         @HCCINIT0_R_LONG_DELAY (c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\A_VAL_DEFINE.OBJ)
-     00h     00d8h     00d9h    0002h      DATA     4.5       @HCCINIT0_R16_HUSH_DELAY (c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\A_VAL_DEFINE.OBJ)
-     00h     00dah     00dah    0001h      DATA     4         @HCCINIT0_R_SFUART_RXCNT (c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\A_VAL_DEFINE.OBJ)
-     00h     00dbh     00dbh    0001h      DATA     4         @HCCINIT0_ntemp (c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\MAIN.OBJ)
-     00h     00dch     00dch    0001h      DATA     3         @HCCINIT0_R_SFCHECK_SUM (c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\A_VAL_DEFINE.OBJ)
-     00h     00ddh     00ddh    0001h      DATA     3         @HCCINIT0_R_BAT_ADC (c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\A_VAL_DEFINE.OBJ)
-     00h     00deh     00deh    0001h      DATA     3         @HCCINIT0_R_KEY_ISCHANGE (c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\A_VAL_DEFINE.OBJ)
-     00h     00dfh     00e2h    0004h      DATA     3         @HCCINIT0_randx (C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\v3_lmrsc.lib)
-     00h     00e3h     00e3h    0001h      DATA     2         @HCCINIT0_R_NOR_DELAY (c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\A_VAL_DEFINE.OBJ)
-     00h     00e4h     00e4h    0001h      DATA     2         @HCCINIT0_temp_ADC (c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\MAIN.OBJ)
-     00h     00e5h     00e5h    0001h      DATA     2         @HCCINIT0_r (c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\MAIN.OBJ)
-     00h     00e6h     00e6h    0001h      DATA     2         @HCCINIT0_mem_temp (c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\MAIN.OBJ)
-     00h     00e7h     00e8h    0002h      DATA     1.5       @HCCINIT0_R_DEBOUNCE_CNT (c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\A_VAL_DEFINE.OBJ)
-     00h     00e9h     00f4h    000ch      DATA     0         @HCCINIT0_R_SFUART_RXDAT (c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\A_VAL_DEFINE.OBJ)
-     00h     00f5h     00f5h    0001h      DATA     0         @HCCINIT0_R_KEY_DEBOUNCE (c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\A_VAL_DEFINE.OBJ)
-     00h     00f6h     00f6h    0001h      DATA     2         @data_r30c (isr:ra~rh)
-     00h     00f7h     00f7h    0001h      DATA     2         @data_r40c (isr:ra~rh)
-     00h     00f8h     00f8h    0001h      DATA     2         @data_r50c (isr:ra~rh)
-     00h     00f9h     00f9h    0001h      DATA     2         @data_r60c (isr:ra~rh)
+     00h     0000h     0000h    0001h      CODE               @code (c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\MAIN.OBJ)
+     00h     0001h     0009h    0009h      CODE               @ROMDATA_BASE (c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\STARTUP1_L.OBJ)
+     00h     000ah     000bh    0002h      CODE               _S_PTM_Init (c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\TM.OBJ)
+     00h     000ch     000fh    0004h      CODE               @INT1_ISR_code (c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\MAIN.OBJ)
+     00h     0010h     0015h    0006h      CODE               _S_ADC_Init (c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\ADC.OBJ)
+     00h     0016h     001ch    0007h      CODE               _S_SM_ISINK0_ON (c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\AFE.OBJ)
+     00h     001dh     0023h    0007h      CODE               _S_SM_ISINK1_ON (c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\AFE.OBJ)
+     00h     0024h     0026h    0003h      CODE               _S_SM_ISINK1_OFF (c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\AFE.OBJ)
+     00h     0027h     002ah    0004h      CODE               _S_SM_OPA_ON (c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\AFE.OBJ)
+     00h     002bh     002eh    0004h      CODE               _S_SM_OPA_OFF (c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\AFE.OBJ)
+     00h     002fh     002fh    0001h      CODE               _S_KEY_Init (c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\A_KEY_DRV.OBJ)
+     00h     0030h     0030h    0001h      CODE               @S_TB0_ISR_code (c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\USERISR.OBJ)
+     00h     0031h     0033h    0003h      CODE               _S_SM_ISINK0_OFF (c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\AFE.OBJ)
+     00h     0034h     0037h    0004h      CODE               @TB1_ISR_code (c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\MAIN.OBJ)
+     00h     0038h     0072h    003bh      CODE               @start (c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\MAIN.OBJ)
+     00h     0073h     0243h    01d1h      CODE               cs (C:\users\tech\desktop\testprj\project_5240_c-v1.0.12\LIB\A_SM_5240_C_V1.0.12.lib)
+     00h     0244h     027fh    003ch      CODE               @crom (c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\USERFUNCTION.OBJ)
+     00h     0280h     02fah    007bh      CODE               _S_READ_ADC (c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\ADC.OBJ)
+     00h     02fbh     034dh    0053h      CODE               _S_ADJ_OPA0 (c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\AFE.OBJ)
+     00h     034eh     03a0h    0053h      CODE               _S_ADJ_OPA1 (c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\AFE.OBJ)
+     00h     03a1h     03bfh    001fh      CODE               _S_OPA_Init (c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\AFE.OBJ)
+     00h     03c0h     03ceh    000fh      CODE               _S_SM_TX0_DELAY (c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\AFE.OBJ)
+     00h     03cfh     03ddh    000fh      CODE               _S_SM_TX1_DELAY (c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\AFE.OBJ)
+     00h     03deh     03ech    000fh      CODE               _S_OPA_STATIME (c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\AFE.OBJ)
+     00h     03edh     03f7h    000bh      CODE               _S_BAT_CK_DELAY (c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\AFE.OBJ)
+     00h     03f8h     040fh    0018h      CODE               _S_RAM_Init (c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\A_BOARD.OBJ)
+     00h     0410h     043dh    002eh      CODE               _S_LED_DRV (c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\A_BOARD.OBJ)
+     00h     043eh     0447h    000ah      CODE               _S_SM_INIT (c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\A_BOARD.OBJ)
+     00h     0448h     045eh    0017h      CODE               _S_BOARD_INI (c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\A_BOARD.OBJ)
+     00h     045fh     047dh    001fh      CODE               _S_HUSH_COUNT (c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\A_BOARD.OBJ)
+     00h     047eh     04ebh    006eh      CODE               _S_BAT_CHECK (c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\A_BOARD.OBJ)
+     00h     04ech     0502h    0017h      CODE               _S_V_CONVER (c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\A_BOARD.OBJ)
+     00h     0503h     0565h    0063h      CODE               _S_SM_T_REF (c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\A_BOARD.OBJ)
+     00h     0566h     0588h    0023h      CODE               _S_WR_EE (c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\A_BOARD.OBJ)
+     00h     0589h     059ch    0014h      CODE               _S_GPIO_Init (c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\GPIO.OBJ)
+     00h     059dh     05c2h    0026h      CODE               _S_KEY_UPDATE (c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\A_KEY_DRV.OBJ)
+     00h     05c3h     05e3h    0021h      CODE               _S_KEY_PROCESS (c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\A_KEY_DRV.OBJ)
+     00h     05e4h     05e9h    0006h      CODE               _S_RCC_Init (c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\RCC.OBJ)
+     00h     05eah     05f5h    000ch      CODE               _S_Timebase_Init (c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\RCC.OBJ)
+     00h     05f6h     0602h    000dh      CODE               _S_SFUART_Init (c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\A_SOFTDEBUG_DRV.OBJ)
+     00h     0603h     0626h    0024h      CODE               _S_SFUART_SEND (c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\A_SOFTDEBUG_DRV.OBJ)
+     00h     0627h     0653h    002dh      CODE               _S_SFUART_RXINT (c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\A_SOFTDEBUG_DRV.OBJ)
+     00h     0654h     0748h    00f5h      CODE               _S_SFUART_DEAL (c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\A_SOFTDEBUG_DRV.OBJ)
+     00h     0749h     07a0h    0058h      CODE               _S_SOFTDEBUG_Output (c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\A_SOFTDEBUG_DRV.OBJ)
+     00h     07a1h     07adh    000dh      CODE               _S_SysTimeTask (c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\A_SYS_FUNCTION.OBJ)
+     00h     07aeh     07b4h    0007h      CODE               _S_CLR_OUTPUT (c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\A_SYS_FUNCTION.OBJ)
+     00h     07b5h     07c4h    0010h      CODE               _S_SYS_DELAY (c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\A_SYS_FUNCTION.OBJ)
+     00h     07c5h     0893h    00cfh      CODE               _S_MODE_JUDG (c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\A_SYS_FUNCTION.OBJ)
+     00h     0894h     089dh    000ah      CODE               _S_BUZZ_Init (c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\TM.OBJ)
+     00h     089eh     08a8h    000bh      CODE               _S_STM_Init (c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\TM.OBJ)
+     00h     08a9h     0903h    005bh      CODE               _S_BUZZ_DRV (c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\TM.OBJ)
+     00h     0904h     09b1h    00aeh      CODE               _main (c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\MAIN.OBJ)
+     00h     09b2h     09b6h    0005h      CODE               _TB1_ISR (c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\MAIN.OBJ)
+     00h     09b7h     09d1h    001bh      CODE               _INT1_ISR (c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\MAIN.OBJ)
+     00h     09d2h     09d2h    0001h      CODE               _S_USER_INIT (c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\USERFUNCTION.OBJ)
+     00h     09d3h     09d3h    0001h      CODE               _S_USER_8MS_WORK_PERIOD (c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\USERFUNCTION.OBJ)
+     00h     09d4h     0a3eh    006bh      CODE               _read_temprature (c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\USERFUNCTION.OBJ)
+     00h     0a3fh     0b1eh    00e0h      CODE               _S_USER_1S_WORK_PERIOD (c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\USERFUNCTION.OBJ)
+     00h     0b1fh     0b2fh    0011h      CODE               _PLT0Recive (c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\PLT.OBJ)
+     00h     0b30h     0b39h    000ah      CODE               __DELAYX (C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
+     00h     0b3ah     0b47h    000eh      CODE               _builtin_holtek_delay_isr00 (C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
+     00h     0b48h     0b55h    000eh      CODE               _CROM2PROM (CROM2PROM)
+     00h     0080h     0081h    0002h      DATA     2         @BITDATASEC (c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\STARTUP1_L.OBJ)
+     00h     0082h     0082h    0001h      DATA     545       @data_ra (C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
+     00h     0083h     0083h    0001h      DATA     121       @data_rb (C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
+     00h     0084h     0084h    0001h      DATA     24        @data_rc (C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
+     00h     0085h     0085h    0001h      DATA     22        @data_rd (C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
+     00h     0086h     00b4h    002fh      DATA     6.0213    ds (C:\users\tech\desktop\testprj\project_5240_c-v1.0.12\LIB\A_SM_5240_C_V1.0.12.lib)
+     00h     00b5h     00b5h    0001h      DATA     6         @data_ra0c (isr:ra~rh)
+     00h     00b6h     00b6h    0001h      DATA     3         @data_rb0c (isr:ra~rh)
+     00h     00b7h     00b7h    0001h      DATA     2         @data_rc0c (isr:ra~rh)
+     00h     00b8h     00b8h    0001h      DATA     2         @data_r134 (isr:ra~rh)
+     00h     00b9h     00b9h    0001h      DATA     2         @data_r234 (isr:ra~rh)
+     00h     00bah     00bah    0001h      DATA     2         @data_r10c (isr:ra~rh)
+     00h     00bbh     00bbh    0001h      DATA     2         @data_r20c (isr:ra~rh)
+     00h     00c4h     00c5h    0002h      DATA     1         @HCCINIT___flag_1981 (c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\A_BOARD.OBJ)
+     00h     00c6h     00c7h    0002h      DATA     0         @HCCINIT___cunter_1980 (c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\A_BOARD.OBJ)
+     00h     00c8h     00c9h    0002h      DATA     4         @HCCINIT___cunter_1988 (c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\A_SYS_FUNCTION.OBJ)
+     00h     00cah     00cbh    0002h      DATA     8         @HCCINIT___r_2027 (c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\USERFUNCTION.OBJ)
+     00h     00cch     00cch    0001h      DATA     3         @HCCINIT___temperature_2035 (c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\USERFUNCTION.OBJ)
+     00h     00cdh     00cdh    0001h      DATA     4         @HCCINIT___plt_2034 (c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\USERFUNCTION.OBJ)
+     00h     00ceh     00cfh    0002h      DATA     7         @HCCINIT___counterPLT_2036 (c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\USERFUNCTION.OBJ)
+     00h     00d0h     00d0h    0001h      DATA     16        @HCCINIT0_R_EE_DATA (c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\A_VAL_DEFINE.OBJ)
+     00h     00d1h     00d1h    0001h      DATA     16        @HCCINIT0_R_EE_ADDR (c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\A_VAL_DEFINE.OBJ)
+     00h     00d2h     00d2h    0001h      DATA     7         @HCCINIT0_R_LONG_DELAY (c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\A_VAL_DEFINE.OBJ)
+     00h     00d3h     00d3h    0001h      DATA     26        @HCCINIT0_R_SYS_FG (c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\A_VAL_DEFINE.OBJ)
+     00h     00d4h     00d4h    0001h      DATA     19        @HCCINIT0_R_BOARD_FG (c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\A_VAL_DEFINE.OBJ)
+     00h     00d5h     00d5h    0001h      DATA     8         @HCCINIT0_R_SYS_MODE_FG (c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\A_VAL_DEFINE.OBJ)
+     00h     00d6h     00d6h    0001h      DATA     7         @HCCINIT0_R_BUZZ_ALARM_DELAY (c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\A_VAL_DEFINE.OBJ)
+     00h     00d7h     00d7h    0001h      DATA     5         @HCCINIT0_R_BUZZ_ALARM_CNT (c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\A_VAL_DEFINE.OBJ)
+     00h     00d8h     00d8h    0001h      DATA     17        @HCCINIT0_R_BUZZ_ALARM_FG (c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\A_VAL_DEFINE.OBJ)
+     00h     00d9h     00d9h    0001h      DATA     3         @HCCINIT0_R_KEY_ISCHANGE (c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\A_VAL_DEFINE.OBJ)
+     00h     00dah     00dah    0001h      DATA     10        @HCCINIT0_R_KEY1_STATE (c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\A_VAL_DEFINE.OBJ)
+     00h     00dbh     00dch    0002h      DATA     2         @HCCINIT0_R_DEBOUNCE_CNT (c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\A_VAL_DEFINE.OBJ)
+     00h     00ddh     00ddh    0001h      DATA     0         @HCCINIT0_R_KEY_DEBOUNCE (c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\A_VAL_DEFINE.OBJ)
+     00h     00deh     00deh    0001h      DATA     6         @HCCINIT0_R_LED_ALARM_DELAY (c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\A_VAL_DEFINE.OBJ)
+     00h     00dfh     00dfh    0001h      DATA     8         @HCCINIT0_R_NOR_DELAY (c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\A_VAL_DEFINE.OBJ)
+     00h     00e0h     00e0h    0001h      DATA     12        @HCCINIT0_R_LED_ALARM_FG (c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\A_VAL_DEFINE.OBJ)
+     00h     00e1h     00e2h    0002h      DATA     4         @HCCINIT0_R16_HUSH_DELAY (c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\A_VAL_DEFINE.OBJ)
+     00h     00e3h     00e3h    0001h      DATA     3         @HCCINIT0_R_BAT_ADC (c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\A_VAL_DEFINE.OBJ)
+     00h     00e4h     00e4h    0001h      DATA     7         @HCCINIT0_R_BAT_CK_SPACE (c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\A_VAL_DEFINE.OBJ)
+     00h     00e5h     00f0h    000ch      DATA     0         @HCCINIT0_R_SFUART_RXDAT (c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\A_VAL_DEFINE.OBJ)
+     00h     00f1h     00f1h    0001h      DATA     7         @HCCINIT0_R_SFUART_RXCNT (c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\A_VAL_DEFINE.OBJ)
+     00h     00f2h     00f2h    0001h      DATA     3         @HCCINIT0_R_UART_RUNCNT (c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\A_VAL_DEFINE.OBJ)
+     00h     00f3h     00f3h    0001h      DATA     3         @HCCINIT0_R_SFCHECK_SUM (c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\A_VAL_DEFINE.OBJ)
+     00h     00f4h     00f4h    0001h      DATA     2         @data_r30c (isr:ra~rh)
+     00h     00f5h     00f5h    0001h      DATA     2         @data_r40c (isr:ra~rh)
+     00h     00f6h     00f6h    0001h      DATA     2         @data_r50c (isr:ra~rh)
+     00h     00f7h     00f7h    0001h      DATA     2         @data_r60c (isr:ra~rh)
 
      Local Sections
 
      Bank    Start     End      Length     Class    AvgIns    Name
-     00h     00bfh     00bfh    0000h      LOCAL    0         _S_SM_TX0_DELAY (c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\AFE.OBJ)
-     00h     00bdh     00bdh    0000h      LOCAL    0         __DELAYX (C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
-     00h     00bfh     00bfh    0000h      LOCAL    0         _S_SM_TX1_DELAY (c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\AFE.OBJ)
-     00h     00bfh     00bfh    0000h      LOCAL    0         _S_OPA_STATIME (c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\AFE.OBJ)
-     00h     00bfh     00c0h    0002h      LOCAL    3         _S_SFUART_DEAL (c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\A_SOFTDEBUG_DRV.OBJ)
-     00h     00bfh     00bfh    0000h      LOCAL    0         _Crom2Prom (CROM2PROM)
-     00h     00bfh     00bfh    0000h      LOCAL    0         _S_CLR_OUTPUT (c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\A_SYS_FUNCTION.OBJ)
-     00h     00c2h     00c2h    0000h      LOCAL    0         _S_SOFTDEBUG_Output (c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\A_SOFTDEBUG_DRV.OBJ)
-     00h     00bfh     00c1h    0003h      LOCAL    2         _S_SFUART_SEND (c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\A_SOFTDEBUG_DRV.OBJ)
-     00h     00c2h     00c2h    0000h      LOCAL    0         _S_DEBUG_Output (c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\A_SYS_FUNCTION.OBJ)
-     00h     00bfh     00c1h    0003h      LOCAL    2         _S_RS232_SEND (c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\A_SYS_FUNCTION.OBJ)
-     00h     00bfh     00bfh    0000h      LOCAL    0         @dummy52 (c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\MAIN.OBJ)
-     00h     00bfh     00bfh    0000h      LOCAL    0         _TB1_ISR (c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\MAIN.OBJ)
-     00h     00bfh     00bfh    0000h      LOCAL    0         @dummy12 (c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\MAIN.OBJ)
-     00h     00bfh     00bfh    0000h      LOCAL    0         _INT1_ISR (c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\MAIN.OBJ)
-     00h     00bdh     00beh    0002h      LOCAL    3.5       _S_SFUART_RXINT (c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\A_SOFTDEBUG_DRV.OBJ)
-     00h     00cdh     00cdh    0000h      LOCAL    0         @dummy (c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\MAIN.OBJ)
-     00h     00cdh     00cdh    0000h      LOCAL    0         _main (c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\MAIN.OBJ)
-     00h     00bfh     00bfh    0000h      LOCAL    0         _PLT0Recive (c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\PLT.OBJ)
-     00h     00bfh     00bfh    0001h      LOCAL    1         _S_RAM_Init (c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\A_BOARD.OBJ)
-     00h     00bfh     00bfh    0000h      LOCAL    0         _S_GPIO_Init (c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\GPIO.OBJ)
-     00h     00bfh     00bfh    0000h      LOCAL    0         _S_RCC_Init (c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\RCC.OBJ)
-     00h     00c0h     00c0h    0000h      LOCAL    0         _S_OPA_Init (c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\AFE.OBJ)
-     00h     00c0h     00c0h    0000h      LOCAL    0         _S_ADJ_OPA0 (c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\AFE.OBJ)
-     00h     00bfh     00bfh    0001h      LOCAL    12        _builtin_holtek_delay_isr00 (C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
-     00h     00c0h     00c0h    0000h      LOCAL    0         _S_ADJ_OPA1 (c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\AFE.OBJ)
-     00h     00bfh     00bfh    0000h      LOCAL    0         _S_PTM_Init (c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\TM.OBJ)
-     00h     00bfh     00bfh    0000h      LOCAL    0         _S_STM_Init (c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\TM.OBJ)
-     00h     00bfh     00bfh    0000h      LOCAL    0         _S_SM_INIT (c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\A_BOARD.OBJ)
-     00h     00bfh     00bfh    0000h      LOCAL    0         _S_BOARD_INI (c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\A_BOARD.OBJ)
-     00h     00bfh     00bfh    0000h      LOCAL    0         _S_KEY_Init (c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\A_KEY_DRV.OBJ)
-     00h     00bfh     00bfh    0000h      LOCAL    0         _S_SFUART_Init (c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\A_SOFTDEBUG_DRV.OBJ)
-     00h     00cbh     00cch    0002h      LOCAL    3         _S_USER_INIT (c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\USERFUNCTION.OBJ)
-     00h     00c0h     00c0h    0001h      LOCAL    2         _S_SYS_DELAY (c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\A_SYS_FUNCTION.OBJ)
-     00h     00bfh     00bfh    0001h      LOCAL    1         _S_READ_ADC (c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\ADC.OBJ)
-     00h     00bfh     00c0h    0002h      LOCAL    2         _srand (C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\v3_lmrsc.lib)
-     00h     00cbh     00cbh    0000h      LOCAL    0         _rand (C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\v3_lmrsc.lib)
-     00h     00bfh     00cah    000ch      LOCAL    3.0833    _builtin_holtek_mulsi3_isr00 (C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
-     00h     00bfh     00bfh    0000h      LOCAL    0         _S_Timebase_Init (c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\RCC.OBJ)
-     00h     00bfh     00bfh    0000h      LOCAL    0         _read_temprature (c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\MAIN.OBJ)
-     00h     00bfh     00bfh    0000h      LOCAL    0         _S_KEY_UPDATE (c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\A_KEY_DRV.OBJ)
-     00h     00bfh     00bfh    0000h      LOCAL    0         _S_KEY_PROCESS (c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\A_KEY_DRV.OBJ)
-     00h     00bfh     00bfh    0000h      LOCAL    0         _S_USER_1S_WORK_PERIOD (c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\USERFUNCTION.OBJ)
-     00h     00bfh     00c0h    0002h      LOCAL    3.5       _S_SysTimeTask (c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\A_SYS_FUNCTION.OBJ)
-     00h     00bfh     00bfh    0000h      LOCAL    0         _S_LED_DRV (c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\A_BOARD.OBJ)
-     00h     00bfh     00bfh    0000h      LOCAL    0         _S_USER_8MS_WORK_PERIOD (c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\USERFUNCTION.OBJ)
-     00h     00bfh     00bfh    0000h      LOCAL    0         _S_HUSH_COUNT (c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\A_BOARD.OBJ)
-     00h     00bfh     00bfh    0000h      LOCAL    0         _S_BAT_CHECK (c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\A_BOARD.OBJ)
-     00h     00c1h     00c1h    0000h      LOCAL    0         _S_MODE_JUDG (c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\A_SYS_FUNCTION.OBJ)
+     00h     00beh     00beh    0001h      LOCAL    4         _S_SM_TX0_DELAY (c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\AFE.OBJ)
+     00h     00bch     00bch    0000h      LOCAL    0         __DELAYX (C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
+     00h     00beh     00beh    0001h      LOCAL    4         _S_SM_TX1_DELAY (c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\AFE.OBJ)
+     00h     00beh     00beh    0001h      LOCAL    4         _S_OPA_STATIME (c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\AFE.OBJ)
+     00h     00beh     00c1h    0004h      LOCAL    9.75      _S_SFUART_DEAL (c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\A_SOFTDEBUG_DRV.OBJ)
+     00h     00beh     00beh    0000h      LOCAL    0         _Crom2Prom (CROM2PROM)
+     00h     00beh     00beh    0000h      LOCAL    0         _S_CLR_OUTPUT (c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\A_SYS_FUNCTION.OBJ)
+     00h     00c1h     00c1h    0000h      LOCAL    0         _S_SOFTDEBUG_Output (c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\A_SOFTDEBUG_DRV.OBJ)
+     00h     00beh     00c0h    0003h      LOCAL    2         _S_SFUART_SEND (c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\A_SOFTDEBUG_DRV.OBJ)
+     00h     00c4h     00c4h    0000h      LOCAL    0         @dummy (c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\MAIN.OBJ)
+     00h     00c4h     00c4h    0000h      LOCAL    0         _main (c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\MAIN.OBJ)
+     00h     00beh     00beh    0001h      LOCAL    2         _S_RAM_Init (c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\A_BOARD.OBJ)
+     00h     00beh     00beh    0000h      LOCAL    0         _S_GPIO_Init (c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\GPIO.OBJ)
+     00h     00beh     00beh    0000h      LOCAL    0         _S_RCC_Init (c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\RCC.OBJ)
+     00h     00c1h     00c1h    0000h      LOCAL    0         _S_OPA_Init (c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\AFE.OBJ)
+     00h     00bfh     00c0h    0002h      LOCAL    3         _S_ADJ_OPA0 (c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\AFE.OBJ)
+     00h     00beh     00beh    0001h      LOCAL    11        _builtin_holtek_delay_isr00 (C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
+     00h     00bfh     00c0h    0002h      LOCAL    3         _S_ADJ_OPA1 (c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\AFE.OBJ)
+     00h     00beh     00beh    0000h      LOCAL    0         _S_PTM_Init (c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\TM.OBJ)
+     00h     00beh     00beh    0000h      LOCAL    0         _S_BUZZ_Init (c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\TM.OBJ)
+     00h     00beh     00beh    0000h      LOCAL    0         _S_STM_Init (c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\TM.OBJ)
+     00h     00beh     00beh    0000h      LOCAL    0         _S_SM_INIT (c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\A_BOARD.OBJ)
+     00h     00beh     00beh    0001h      LOCAL    4         _S_BOARD_INI (c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\A_BOARD.OBJ)
+     00h     00beh     00beh    0000h      LOCAL    0         _S_KEY_Init (c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\A_KEY_DRV.OBJ)
+     00h     00beh     00beh    0000h      LOCAL    0         _S_SFUART_Init (c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\A_SOFTDEBUG_DRV.OBJ)
+     00h     00beh     00beh    0000h      LOCAL    0         _S_USER_INIT (c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\USERFUNCTION.OBJ)
+     00h     00beh     00beh    0000h      LOCAL    0         _S_Timebase_Init (c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\RCC.OBJ)
+     00h     00bfh     00c0h    0002h      LOCAL    3         _S_SYS_DELAY (c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\A_SYS_FUNCTION.OBJ)
+     00h     00beh     00c0h    0003h      LOCAL    3         _S_READ_ADC (c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\ADC.OBJ)
+     00h     00beh     00beh    0000h      LOCAL    0         _S_KEY_UPDATE (c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\A_KEY_DRV.OBJ)
+     00h     00beh     00beh    0000h      LOCAL    0         _S_KEY_PROCESS (c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\A_KEY_DRV.OBJ)
+     00h     00beh     00beh    0000h      LOCAL    0         _S_SysTimeTask (c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\A_SYS_FUNCTION.OBJ)
+     00h     00beh     00beh    0000h      LOCAL    0         _S_LED_DRV (c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\A_BOARD.OBJ)
+     00h     00beh     00beh    0000h      LOCAL    0         _S_BUZZ_DRV (c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\TM.OBJ)
+     00h     00beh     00beh    0000h      LOCAL    0         _S_USER_8MS_WORK_PERIOD (c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\USERFUNCTION.OBJ)
+     00h     00beh     00beh    0000h      LOCAL    0         _S_HUSH_COUNT (c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\A_BOARD.OBJ)
+     00h     00beh     00c1h    0004h      LOCAL    3         _S_BAT_CHECK (c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\A_BOARD.OBJ)
+     00h     00c1h     00c1h    0001h      LOCAL    6         _S_MODE_JUDG (c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\A_SYS_FUNCTION.OBJ)
+     00h     00c2h     00c3h    0002h      LOCAL    1         _S_USER_1S_WORK_PERIOD (c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\USERFUNCTION.OBJ)
+     00h     00c1h     00c1h    0001h      LOCAL    2         _read_temprature (c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\USERFUNCTION.OBJ)
+     00h     00beh     00beh    0000h      LOCAL    0         _PLT0Recive (c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\PLT.OBJ)
+     00h     00beh     00beh    0000h      LOCAL    0         @dummy52 (c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\MAIN.OBJ)
+     00h     00beh     00beh    0000h      LOCAL    0         _TB1_ISR (c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\MAIN.OBJ)
+     00h     00beh     00beh    0000h      LOCAL    0         @dummy12 (c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\MAIN.OBJ)
+     00h     00beh     00beh    0000h      LOCAL    0         _INT1_ISR (c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\MAIN.OBJ)
+     00h     00bch     00bdh    0002h      LOCAL    3.5       _S_SFUART_RXINT (c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\A_SOFTDEBUG_DRV.OBJ)
 
      Indepentent Local Sections
 
      Bank    Start     End      Length     Class    AvgIns    Name
-     00h     00bfh     00bfh    0000h      ILOCAL   0         _S_ADC_Init (c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\ADC.OBJ)
-     00h     00bfh     00bfh    0000h      ILOCAL   0         _S_SM_ISINK0_ON (c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\AFE.OBJ)
-     00h     00bfh     00bfh    0000h      ILOCAL   0         _S_SM_ISINK1_ON (c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\AFE.OBJ)
-     00h     00bfh     00bfh    0000h      ILOCAL   0         _S_SM_ISINK0_OFF (c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\AFE.OBJ)
-     00h     00bfh     00bfh    0000h      ILOCAL   0         _S_SM_ISINK1_OFF (c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\AFE.OBJ)
-     00h     00bfh     00bfh    0000h      ILOCAL   0         _S_SM_OPA_ON (c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\AFE.OBJ)
-     00h     00bfh     00bfh    0000h      ILOCAL   0         _S_SM_OPA_OFF (c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\AFE.OBJ)
-     00h     00bfh     00bfh    0000h      ILOCAL   0         _S_BAT_CK_DELAY (c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\AFE.OBJ)
-     00h     00bfh     00bfh    0000h      ILOCAL   0         _S_V_CONVER (c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\A_BOARD.OBJ)
-     00h     00bfh     00bfh    0001h      ILOCAL   5         _S_SM_T_REF (c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\A_BOARD.OBJ)
-     00h     00bfh     00c0h    0002h      ILOCAL   1.5       _S_WR_EE (c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\A_BOARD.OBJ)
-     00h     00bfh     00bfh    0000h      ILOCAL   0         _S_BUZZ_Init (c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\TM.OBJ)
+     00h     00beh     00beh    0000h      ILOCAL   0         _S_ADC_Init (c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\ADC.OBJ)
+     00h     00beh     00beh    0000h      ILOCAL   0         _S_SM_ISINK0_ON (c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\AFE.OBJ)
+     00h     00beh     00beh    0000h      ILOCAL   0         _S_SM_ISINK1_ON (c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\AFE.OBJ)
+     00h     00beh     00beh    0000h      ILOCAL   0         _S_SM_ISINK0_OFF (c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\AFE.OBJ)
+     00h     00beh     00beh    0000h      ILOCAL   0         _S_SM_ISINK1_OFF (c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\AFE.OBJ)
+     00h     00beh     00beh    0000h      ILOCAL   0         _S_SM_OPA_ON (c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\AFE.OBJ)
+     00h     00beh     00beh    0000h      ILOCAL   0         _S_SM_OPA_OFF (c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\AFE.OBJ)
+     00h     00beh     00beh    0001h      ILOCAL   3         _S_BAT_CK_DELAY (c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\AFE.OBJ)
+     00h     00beh     00beh    0000h      ILOCAL   0         _S_V_CONVER (c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\A_BOARD.OBJ)
+     00h     00beh     00beh    0001h      ILOCAL   6         _S_SM_T_REF (c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\A_BOARD.OBJ)
+     00h     00beh     00bfh    0002h      ILOCAL   1.5       _S_WR_EE (c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\A_BOARD.OBJ)
 
      Public Symbols Information
      Address            Public by Name
-     0844h              _Crom2Prom
-     0844h              _Crom2PromNext
+     0b48h              _Crom2Prom
+     0b48h              _Crom2PromNext
      0080h[0]           _F_BD_DATA_DONT_SAVE
-     0081h[1]           _F_NO_SLEEP
-     0674h              _INT1_ISR
-     07c1h              _PLT0Recive
-     00d8h              _R16_HUSH_DELAY
-     00ddh              _R_BAT_ADC
-     00d6h              _R_BAT_CK_SPACE
-     00ceh              _R_BOARD_FG
-     00b0h              _R_CACL_A_H
-     00b1h              _R_CACL_A_L
-     00b2h              _R_CACL_B_H
-     00b3h              _R_CACL_B_L
-     00e7h              _R_DEBOUNCE_CNT
-     00cfh              _R_EE_ADDR
+     0081h[0]           _F_NO_SLEEP
+     09b7h              _INT1_ISR
+     0b1fh              _PLT0Recive
+     00e1h              _R16_HUSH_DELAY
+     00e3h              _R_BAT_ADC
+     00e4h              _R_BAT_CK_SPACE
+     00d4h              _R_BOARD_FG
+     00d7h              _R_BUZZ_ALARM_CNT
+     00d6h              _R_BUZZ_ALARM_DELAY
+     00d8h              _R_BUZZ_ALARM_FG
+     00adh              _R_CACL_A_H
+     00aeh              _R_CACL_A_L
+     00afh              _R_CACL_B_H
+     00b0h              _R_CACL_B_L
+     00dbh              _R_DEBOUNCE_CNT
+     00d1h              _R_EE_ADDR
      00d0h              _R_EE_DATA
-     00aeh              _R_INTERRESIST_DELAY
-     00abh              _R_ISINK0_DELAY
-     00a9h              _R_ISINK0_VALUE
-     00ach              _R_ISINK1_DELAY
-     00aah              _R_ISINK1_VALUE
-     00d2h              _R_KEY1_STATE
-     00f5h              _R_KEY_DEBOUNCE
-     00deh              _R_KEY_ISCHANGE
-     00d4h              _R_LED_ALARM_DELAY
-     00d1h              _R_LED_ALARM_FG
-     00d7h              _R_LONG_DELAY
-     00e3h              _R_NOR_DELAY
-     00adh              _R_OPA_DELAY
-     00dch              _R_SFCHECK_SUM
-     00dah              _R_SFUART_RXCNT
-     00e9h              _R_SFUART_RXDAT
-     0090h              _R_SM_ALARM
-     0096h              _R_SM_BD_ALARM
-     0099h              _R_SM_BD_KQ_SET
-     0095h              _R_SM_BD_ZERO
-     00a8h              _R_SM_BD_ZERO_MAX
-     00a7h              _R_SM_BD_ZERO_MIN
-     008dh              _R_SM_DATA
-     0089h              _R_SM_FG
-     008ch              _R_SM_IR_DATA
-     00a6h              _R_SM_LIB_STATE
-     00a2h              _R_SM_TMP
-     008bh              _R_SM_ZERO_DATA
-     00cdh              _R_SYS_FG
-     00d3h              _R_SYS_MODE_FG
-     00b4h              _R_TMP0
-     00b5h              _R_TMP1
-     00b6h              _R_TMP2
-     00b7h              _R_TMP3
-     00a4h              _R_T_ADC
-     00d5h              _R_UART_RUNCNT
-     00a0h              _R_VDD_ADC
-     009eh              _R_VDD_CK_SPACE
-     009fh              _R_VDD_CK_SPACE_C
-     009ch              _R_VDD_RL_ADC
-     0001h              _S_ADC_Init
-     02a5h              _S_ADJ_OPA0
-     02c4h              _S_ADJ_OPA1
-     0392h              _S_BAT_CHECK
-     0331h              _S_BAT_CK_DELAY
-     036bh              _S_BOARD_INI
-     0657h              _S_BUZZ_Init
-     058eh              _S_CLR_OUTPUT
-     05eah              _S_DEBUG_Output
-     03efh              _S_GPIO_Init
-     037ch              _S_HUSH_COUNT
-     0405h              _S_KEY_Init
-     041dh              _S_KEY_PROCESS
-     0406h              _S_KEY_UPDATE
-     0348h              _S_LED_DRV
-     059fh              _S_MODE_JUDG
-     02e3h              _S_OPA_Init
-     0325h              _S_OPA_STATIME
-     064eh              _S_PTM_Init
-     0339h              _S_RAM_Init
-     042eh              _S_RCC_Init
-     0245h              _S_READ_ADC
-     004fh              _S_READ_SMOKE_DATA
-     0570h              _S_RS232_SEND
-     01a9h              _S_SBR_DIV_16_CALC
-     0496h              _S_SFUART_DEAL
-     0440h              _S_SFUART_Init
-     0471h              _S_SFUART_RXINT
-     044dh              _S_SFUART_SEND
-     016fh              _S_SM_ALARM_CHECK
-     0042h              _S_SM_BD_AIR
-     00cfh              _S_SM_BD_ALARM
-     0048h              _S_SM_BD_SM
-     0092h              _S_SM_BD_ZERO
-     0038h              _S_SM_INI
-     0363h              _S_SM_INIT
-     0195h              _S_SM_IR_ERR_CHECK
+     00abh              _R_INTERRESIST_DELAY
+     00a8h              _R_ISINK0_DELAY
+     00a6h              _R_ISINK0_VALUE
+     00a9h              _R_ISINK1_DELAY
+     00a7h              _R_ISINK1_VALUE
+     00dah              _R_KEY1_STATE
+     00ddh              _R_KEY_DEBOUNCE
+     00d9h              _R_KEY_ISCHANGE
+     00deh              _R_LED_ALARM_DELAY
+     00e0h              _R_LED_ALARM_FG
+     00d2h              _R_LONG_DELAY
+     00dfh              _R_NOR_DELAY
+     00aah              _R_OPA_DELAY
+     00f3h              _R_SFCHECK_SUM
+     00f1h              _R_SFUART_RXCNT
+     00e5h              _R_SFUART_RXDAT
+     008dh              _R_SM_ALARM
+     0093h              _R_SM_BD_ALARM
+     0096h              _R_SM_BD_KQ_SET
+     0092h              _R_SM_BD_ZERO
+     00a5h              _R_SM_BD_ZERO_MAX
+     00a4h              _R_SM_BD_ZERO_MIN
+     008ah              _R_SM_DATA
+     0086h              _R_SM_FG
+     0089h              _R_SM_IR_DATA
+     00a3h              _R_SM_LIB_STATE
+     009fh              _R_SM_TMP
+     0088h              _R_SM_ZERO_DATA
+     00d3h              _R_SYS_FG
+     00d5h              _R_SYS_MODE_FG
+     00b1h              _R_TMP0
+     00b2h              _R_TMP1
+     00b3h              _R_TMP2
+     00b4h              _R_TMP3
+     00a1h              _R_T_ADC
+     00f2h              _R_UART_RUNCNT
+     009dh              _R_VDD_ADC
+     009bh              _R_VDD_CK_SPACE
+     009ch              _R_VDD_CK_SPACE_C
+     0099h              _R_VDD_RL_ADC
+     0010h              _S_ADC_Init
+     02fbh              _S_ADJ_OPA0
+     034eh              _S_ADJ_OPA1
+     047eh              _S_BAT_CHECK
+     03edh              _S_BAT_CK_DELAY
+     0448h              _S_BOARD_INI
+     08a9h              _S_BUZZ_DRV
+     0894h              _S_BUZZ_Init
+     07aeh              _S_CLR_OUTPUT
+     0589h              _S_GPIO_Init
+     045fh              _S_HUSH_COUNT
+     002fh              _S_KEY_Init
+     05c3h              _S_KEY_PROCESS
+     059dh              _S_KEY_UPDATE
+     0410h              _S_LED_DRV
+     07c5h              _S_MODE_JUDG
+     03a1h              _S_OPA_Init
+     03deh              _S_OPA_STATIME
+     000ah              _S_PTM_Init
+     03f8h              _S_RAM_Init
+     05e4h              _S_RCC_Init
+     0280h              _S_READ_ADC
+     008ah              _S_READ_SMOKE_DATA
+     01e4h              _S_SBR_DIV_16_CALC
+     0654h              _S_SFUART_DEAL
+     05f6h              _S_SFUART_Init
+     0627h              _S_SFUART_RXINT
+     0603h              _S_SFUART_SEND
+     01aah              _S_SM_ALARM_CHECK
+     007dh              _S_SM_BD_AIR
+     010ah              _S_SM_BD_ALARM
+     0083h              _S_SM_BD_SM
+     00cdh              _S_SM_BD_ZERO
+     0073h              _S_SM_INI
+     043eh              _S_SM_INIT
+     01d0h              _S_SM_IR_ERR_CHECK
      0031h              _S_SM_ISINK0_OFF
-     0007h              _S_SM_ISINK0_ON
-     0302h              _S_SM_ISINK1_OFF
-     02fdh              _S_SM_ISINK1_ON
-     0309h              _S_SM_OPA_OFF
-     0305h              _S_SM_OPA_ON
-     030dh              _S_SM_TX0_DELAY
-     0319h              _S_SM_TX1_DELAY
-     03bah              _S_SM_T_REF
-     0528h              _S_SOFTDEBUG_Output
-     0663h              _S_STM_Init
-     01c0h              _S_SUR_MUL_16_8_CALC
-     0592h              _S_SYS_DELAY
-     0561h              _S_SysTimeTask
-     0434h              _S_Timebase_Init
-     07aah              _S_USER_1S_WORK_PERIOD
-     07a9h              _S_USER_8MS_WORK_PERIOD
-     075ah              _S_USER_INIT
-     03b1h              _S_V_CONVER
-     03ddh              _S_WR_EE
-     066fh              _TB1_ISR
-     07d4h              __DELAYX0
-     07d3h              __DELAYX1
-     07d3h              __DELAYX2
-     07d2h              __DELAYX3
-     07d2h              __DELAYX4
-     07d1h              __DELAYX5
-     07d1h              __DELAYX6
-     07ddh              __DELAYY0_isr00
-     07ddh              __DELAYY1_isr00
-     07dch              __DELAYY2_isr00
-     07dch              __DELAYY3_isr00
-     07dbh              __DELAYY4_isr00
-     07dbh              __DELAYY5_isr00
-     0825h              _builtin_holtek_mulsi3_isr00
-     00c2h              _builtin_holtek_mulsi3_isr00_2
-     06bdh              _main
-     00e6h              _mem_temp
-     00dbh              _ntemp
-     00e5h              _r
-     07f0h              _rand
-     00dfh              _randx
-     068fh              _read_temprature
-     0081h[0]           _resetMcu
-     07e9h              _srand
-     00e4h              _temp_ADC
-     0209h              _temprature1_250table
-     00bbh              r10c
-     00b9h              r134
-     00bch              r20c
-     00bah              r234
-     00f6h              r30c
-     00f7h              r40c
-     00f8h              r50c
-     00f9h              r60c
+     0016h              _S_SM_ISINK0_ON
+     0024h              _S_SM_ISINK1_OFF
+     001dh              _S_SM_ISINK1_ON
+     002bh              _S_SM_OPA_OFF
+     0027h              _S_SM_OPA_ON
+     03c0h              _S_SM_TX0_DELAY
+     03cfh              _S_SM_TX1_DELAY
+     0503h              _S_SM_T_REF
+     0749h              _S_SOFTDEBUG_Output
+     089eh              _S_STM_Init
+     01fbh              _S_SUR_MUL_16_8_CALC
+     07b5h              _S_SYS_DELAY
+     07a1h              _S_SysTimeTask
+     0030h              _S_TB0_ISR
+     05eah              _S_Timebase_Init
+     0a3fh              _S_USER_1S_WORK_PERIOD
+     09d3h              _S_USER_8MS_WORK_PERIOD
+     09d2h              _S_USER_INIT
+     04ech              _S_V_CONVER
+     0566h              _S_WR_EE
+     09b2h              _TB1_ISR
+     0b33h              __DELAYX0
+     0b32h              __DELAYX1
+     0b32h              __DELAYX2
+     0b31h              __DELAYX3
+     0b31h              __DELAYX4
+     0b30h              __DELAYX5
+     0b30h              __DELAYX6
+     0b3ch              __DELAYY0_isr00
+     0b3ch              __DELAYY1_isr00
+     0b3bh              __DELAYY2_isr00
+     0b3bh              __DELAYY3_isr00
+     0b3ah              __DELAYY4_isr00
+     0b3ah              __DELAYY5_isr00
+     0904h              _main
+     09d4h              _read_temprature
+     00bah              r10c
+     00b8h              r134
+     00bbh              r20c
+     00b9h              r234
+     00f4h              r30c
+     00f5h              r40c
+     00f6h              r50c
+     00f7h              r60c
      0082h              ra
-     00b8h              ra0c
+     00b5h              ra0c
      0083h              rb
+     00b6h              rb0c
      0084h              rc
+     00b7h              rc0c
      0085h              rd
-     0086h              re
-     0087h              rf
-     0088h              rg
-     07d0h              startup_value_1
+     0000h              startup_value_1
 
      Address            Public by Value
-     0001h              _S_ADC_Init
-     0007h              _S_SM_ISINK0_ON
+     0000h              startup_value_1
+     000ah              _S_PTM_Init
+     0010h              _S_ADC_Init
+     0016h              _S_SM_ISINK0_ON
+     001dh              _S_SM_ISINK1_ON
+     0024h              _S_SM_ISINK1_OFF
+     0027h              _S_SM_OPA_ON
+     002bh              _S_SM_OPA_OFF
+     002fh              _S_KEY_Init
+     0030h              _S_TB0_ISR
      0031h              _S_SM_ISINK0_OFF
-     0038h              _S_SM_INI
-     0042h              _S_SM_BD_AIR
-     0048h              _S_SM_BD_SM
-     004fh              _S_READ_SMOKE_DATA
+     0073h              _S_SM_INI
+     007dh              _S_SM_BD_AIR
      0082h              ra
      0083h              rb
+     0083h              _S_SM_BD_SM
      0084h              rc
      0085h              rd
-     0086h              re
-     0087h              rf
-     0088h              rg
-     0089h              _R_SM_FG
-     008bh              _R_SM_ZERO_DATA
-     008ch              _R_SM_IR_DATA
-     008dh              _R_SM_DATA
-     0090h              _R_SM_ALARM
-     0092h              _S_SM_BD_ZERO
-     0095h              _R_SM_BD_ZERO
-     0096h              _R_SM_BD_ALARM
-     0099h              _R_SM_BD_KQ_SET
-     009ch              _R_VDD_RL_ADC
-     009eh              _R_VDD_CK_SPACE
-     009fh              _R_VDD_CK_SPACE_C
-     00a0h              _R_VDD_ADC
-     00a2h              _R_SM_TMP
-     00a4h              _R_T_ADC
-     00a6h              _R_SM_LIB_STATE
-     00a7h              _R_SM_BD_ZERO_MIN
-     00a8h              _R_SM_BD_ZERO_MAX
-     00a9h              _R_ISINK0_VALUE
-     00aah              _R_ISINK1_VALUE
-     00abh              _R_ISINK0_DELAY
-     00ach              _R_ISINK1_DELAY
-     00adh              _R_OPA_DELAY
-     00aeh              _R_INTERRESIST_DELAY
-     00b0h              _R_CACL_A_H
-     00b1h              _R_CACL_A_L
-     00b2h              _R_CACL_B_H
-     00b3h              _R_CACL_B_L
-     00b4h              _R_TMP0
-     00b5h              _R_TMP1
-     00b6h              _R_TMP2
-     00b7h              _R_TMP3
-     00b8h              ra0c
-     00b9h              r134
-     00bah              r234
-     00bbh              r10c
-     00bch              r20c
-     00c2h              _builtin_holtek_mulsi3_isr00_2
-     00cdh              _R_SYS_FG
-     00ceh              _R_BOARD_FG
-     00cfh              _R_EE_ADDR
-     00cfh              _S_SM_BD_ALARM
+     0086h              _R_SM_FG
+     0088h              _R_SM_ZERO_DATA
+     0089h              _R_SM_IR_DATA
+     008ah              _S_READ_SMOKE_DATA
+     008ah              _R_SM_DATA
+     008dh              _R_SM_ALARM
+     0092h              _R_SM_BD_ZERO
+     0093h              _R_SM_BD_ALARM
+     0096h              _R_SM_BD_KQ_SET
+     0099h              _R_VDD_RL_ADC
+     009bh              _R_VDD_CK_SPACE
+     009ch              _R_VDD_CK_SPACE_C
+     009dh              _R_VDD_ADC
+     009fh              _R_SM_TMP
+     00a1h              _R_T_ADC
+     00a3h              _R_SM_LIB_STATE
+     00a4h              _R_SM_BD_ZERO_MIN
+     00a5h              _R_SM_BD_ZERO_MAX
+     00a6h              _R_ISINK0_VALUE
+     00a7h              _R_ISINK1_VALUE
+     00a8h              _R_ISINK0_DELAY
+     00a9h              _R_ISINK1_DELAY
+     00aah              _R_OPA_DELAY
+     00abh              _R_INTERRESIST_DELAY
+     00adh              _R_CACL_A_H
+     00aeh              _R_CACL_A_L
+     00afh              _R_CACL_B_H
+     00b0h              _R_CACL_B_L
+     00b1h              _R_TMP0
+     00b2h              _R_TMP1
+     00b3h              _R_TMP2
+     00b4h              _R_TMP3
+     00b5h              ra0c
+     00b6h              rb0c
+     00b7h              rc0c
+     00b8h              r134
+     00b9h              r234
+     00bah              r10c
+     00bbh              r20c
+     00cdh              _S_SM_BD_ZERO
      00d0h              _R_EE_DATA
-     00d1h              _R_LED_ALARM_FG
-     00d2h              _R_KEY1_STATE
-     00d3h              _R_SYS_MODE_FG
-     00d4h              _R_LED_ALARM_DELAY
-     00d5h              _R_UART_RUNCNT
-     00d6h              _R_BAT_CK_SPACE
-     00d7h              _R_LONG_DELAY
-     00d8h              _R16_HUSH_DELAY
-     00dah              _R_SFUART_RXCNT
-     00dbh              _ntemp
-     00dch              _R_SFCHECK_SUM
-     00ddh              _R_BAT_ADC
-     00deh              _R_KEY_ISCHANGE
-     00dfh              _randx
-     00e3h              _R_NOR_DELAY
-     00e4h              _temp_ADC
-     00e5h              _r
-     00e6h              _mem_temp
-     00e7h              _R_DEBOUNCE_CNT
-     00e9h              _R_SFUART_RXDAT
-     00f5h              _R_KEY_DEBOUNCE
-     00f6h              r30c
-     00f7h              r40c
-     00f8h              r50c
-     00f9h              r60c
-     016fh              _S_SM_ALARM_CHECK
-     0195h              _S_SM_IR_ERR_CHECK
-     01a9h              _S_SBR_DIV_16_CALC
-     01c0h              _S_SUR_MUL_16_8_CALC
-     0209h              _temprature1_250table
-     0245h              _S_READ_ADC
-     02a5h              _S_ADJ_OPA0
-     02c4h              _S_ADJ_OPA1
-     02e3h              _S_OPA_Init
-     02fdh              _S_SM_ISINK1_ON
-     0302h              _S_SM_ISINK1_OFF
-     0305h              _S_SM_OPA_ON
-     0309h              _S_SM_OPA_OFF
-     030dh              _S_SM_TX0_DELAY
-     0319h              _S_SM_TX1_DELAY
-     0325h              _S_OPA_STATIME
-     0331h              _S_BAT_CK_DELAY
-     0339h              _S_RAM_Init
-     0348h              _S_LED_DRV
-     0363h              _S_SM_INIT
-     036bh              _S_BOARD_INI
-     037ch              _S_HUSH_COUNT
-     0392h              _S_BAT_CHECK
-     03b1h              _S_V_CONVER
-     03bah              _S_SM_T_REF
-     03ddh              _S_WR_EE
-     03efh              _S_GPIO_Init
+     00d1h              _R_EE_ADDR
+     00d2h              _R_LONG_DELAY
+     00d3h              _R_SYS_FG
+     00d4h              _R_BOARD_FG
+     00d5h              _R_SYS_MODE_FG
+     00d6h              _R_BUZZ_ALARM_DELAY
+     00d7h              _R_BUZZ_ALARM_CNT
+     00d8h              _R_BUZZ_ALARM_FG
+     00d9h              _R_KEY_ISCHANGE
+     00dah              _R_KEY1_STATE
+     00dbh              _R_DEBOUNCE_CNT
+     00ddh              _R_KEY_DEBOUNCE
+     00deh              _R_LED_ALARM_DELAY
+     00dfh              _R_NOR_DELAY
+     00e0h              _R_LED_ALARM_FG
+     00e1h              _R16_HUSH_DELAY
+     00e3h              _R_BAT_ADC
+     00e4h              _R_BAT_CK_SPACE
+     00e5h              _R_SFUART_RXDAT
+     00f1h              _R_SFUART_RXCNT
+     00f2h              _R_UART_RUNCNT
+     00f3h              _R_SFCHECK_SUM
+     00f4h              r30c
+     00f5h              r40c
+     00f6h              r50c
+     00f7h              r60c
+     010ah              _S_SM_BD_ALARM
+     01aah              _S_SM_ALARM_CHECK
+     01d0h              _S_SM_IR_ERR_CHECK
+     01e4h              _S_SBR_DIV_16_CALC
+     01fbh              _S_SUR_MUL_16_8_CALC
+     0280h              _S_READ_ADC
+     02fbh              _S_ADJ_OPA0
+     034eh              _S_ADJ_OPA1
+     03a1h              _S_OPA_Init
+     03c0h              _S_SM_TX0_DELAY
+     03cfh              _S_SM_TX1_DELAY
+     03deh              _S_OPA_STATIME
+     03edh              _S_BAT_CK_DELAY
+     03f8h              _S_RAM_Init
      0080h[0]           _F_BD_DATA_DONT_SAVE
-     0405h              _S_KEY_Init
-     0406h              _S_KEY_UPDATE
-     0081h[0]           _resetMcu
-     0081h[1]           _F_NO_SLEEP
-     041dh              _S_KEY_PROCESS
-     042eh              _S_RCC_Init
-     0434h              _S_Timebase_Init
-     0440h              _S_SFUART_Init
-     044dh              _S_SFUART_SEND
-     0471h              _S_SFUART_RXINT
-     0496h              _S_SFUART_DEAL
-     0528h              _S_SOFTDEBUG_Output
-     0561h              _S_SysTimeTask
-     0570h              _S_RS232_SEND
-     058eh              _S_CLR_OUTPUT
-     0592h              _S_SYS_DELAY
-     059fh              _S_MODE_JUDG
-     05eah              _S_DEBUG_Output
-     064eh              _S_PTM_Init
-     0657h              _S_BUZZ_Init
-     0663h              _S_STM_Init
-     066fh              _TB1_ISR
-     0674h              _INT1_ISR
-     068fh              _read_temprature
-     06bdh              _main
-     075ah              _S_USER_INIT
-     07a9h              _S_USER_8MS_WORK_PERIOD
-     07aah              _S_USER_1S_WORK_PERIOD
-     07c1h              _PLT0Recive
-     07d0h              startup_value_1
-     07d1h              __DELAYX6
-     07d1h              __DELAYX5
-     07d2h              __DELAYX4
-     07d2h              __DELAYX3
-     07d3h              __DELAYX2
-     07d3h              __DELAYX1
-     07d4h              __DELAYX0
-     07dbh              __DELAYY5_isr00
-     07dbh              __DELAYY4_isr00
-     07dch              __DELAYY3_isr00
-     07dch              __DELAYY2_isr00
-     07ddh              __DELAYY1_isr00
-     07ddh              __DELAYY0_isr00
-     07e9h              _srand
-     07f0h              _rand
-     0825h              _builtin_holtek_mulsi3_isr00
-     0844h              _Crom2Prom
-     0844h              _Crom2PromNext
+     0081h[0]           _F_NO_SLEEP
+     0410h              _S_LED_DRV
+     043eh              _S_SM_INIT
+     0448h              _S_BOARD_INI
+     045fh              _S_HUSH_COUNT
+     047eh              _S_BAT_CHECK
+     04ech              _S_V_CONVER
+     0503h              _S_SM_T_REF
+     0566h              _S_WR_EE
+     0589h              _S_GPIO_Init
+     059dh              _S_KEY_UPDATE
+     05c3h              _S_KEY_PROCESS
+     05e4h              _S_RCC_Init
+     05eah              _S_Timebase_Init
+     05f6h              _S_SFUART_Init
+     0603h              _S_SFUART_SEND
+     0627h              _S_SFUART_RXINT
+     0654h              _S_SFUART_DEAL
+     0749h              _S_SOFTDEBUG_Output
+     07a1h              _S_SysTimeTask
+     07aeh              _S_CLR_OUTPUT
+     07b5h              _S_SYS_DELAY
+     07c5h              _S_MODE_JUDG
+     0894h              _S_BUZZ_Init
+     089eh              _S_STM_Init
+     08a9h              _S_BUZZ_DRV
+     0904h              _main
+     09b2h              _TB1_ISR
+     09b7h              _INT1_ISR
+     09d2h              _S_USER_INIT
+     09d3h              _S_USER_8MS_WORK_PERIOD
+     09d4h              _read_temprature
+     0a3fh              _S_USER_1S_WORK_PERIOD
+     0b1fh              _PLT0Recive
+     0b30h              __DELAYX5
+     0b30h              __DELAYX6
+     0b31h              __DELAYX3
+     0b31h              __DELAYX4
+     0b32h              __DELAYX1
+     0b32h              __DELAYX2
+     0b33h              __DELAYX0
+     0b3ah              __DELAYY4_isr00
+     0b3ah              __DELAYY5_isr00
+     0b3bh              __DELAYY2_isr00
+     0b3bh              __DELAYY3_isr00
+     0b3ch              __DELAYY0_isr00
+     0b3ch              __DELAYY1_isr00
+     0b48h              _Crom2PromNext
+     0b48h              _Crom2Prom
 
 
 ROM Usage Statistics
      Size      Used     Percentage
-     1000h     0852h    52%
+     1000h     0b56h    70%
 
 RAM Usage Statistics
     Bank      Size      Used     Percentage
-     00h       0080h     007ah    95%
+     00h       0080h     0078h    93%
      01h       0080h     0000h    0%
-     Total     0100h     007ah    47%
+     Total     0100h     0078h    46%
 
 Use Stack Count
 _S_SM_TX0_DELAY: 1
@@ -539,10 +518,9 @@ _S_OPA_STATIME: 1
 _S_V_CONVER: 0
 _S_SFUART_DEAL: 1
 _S_SOFTDEBUG_Output: 1
-_S_DEBUG_Output: 1
+_main: 4
 _TB1_ISR: 0
 _INT1_ISR: 2
-_main: 3
 
 Call Tree
     _S_SM_TX0_DELAY
@@ -557,17 +535,8 @@ Call Tree
         _S_CLR_OUTPUT (0)
     _S_SOFTDEBUG_Output
         _S_SFUART_SEND (0)
-    _S_DEBUG_Output
-        _S_RS232_SEND (0)
-    @dummy52
-        _TB1_ISR (0)
-    @dummy12
-        _INT1_ISR (0)
-            _S_SFUART_RXINT (1)
-                __DELAYX (2)
     @dummy
         _main (0)
-            _PLT0Recive (1)
             _S_RAM_Init (1)
             _S_GPIO_Init (1)
             _S_RCC_Init (1)
@@ -577,6 +546,7 @@ Call Tree
                 _S_ADJ_OPA1 (2)
                     _builtin_holtek_delay_isr00 (3)
             _S_PTM_Init (1)
+                _S_BUZZ_Init (2)
             _S_STM_Init (1)
             _S_SM_INIT (1)
             _S_BOARD_INI (1)
@@ -584,28 +554,16 @@ Call Tree
             _S_KEY_Init (1)
             _S_SFUART_Init (1)
             _S_USER_INIT (1)
-                _S_SYS_DELAY (2)
-                    _builtin_holtek_delay_isr00 (3)
-                _S_READ_ADC (2)
-                    __DELAYX (3)
-                _srand (2)
-                _rand (2)
-                    _builtin_holtek_mulsi3_isr00 (3)
-                _builtin_holtek_delay_isr00 (2)
             _S_Timebase_Init (1)
             _S_SYS_DELAY (1)
                 _builtin_holtek_delay_isr00 (2)
             _S_READ_ADC (1)
                 __DELAYX (2)
-            _read_temprature (1)
-                _Crom2Prom (2)
             _S_KEY_UPDATE (1)
             _S_KEY_PROCESS (1)
-            _S_USER_1S_WORK_PERIOD (1)
-                _PLT0Recive (2)
             _S_SysTimeTask (1)
-            _S_SFUART_SEND (1)
             _S_LED_DRV (1)
+            _S_BUZZ_DRV (1)
             _S_USER_8MS_WORK_PERIOD (1)
             _S_HUSH_COUNT (1)
             _S_BAT_CHECK (1)
@@ -614,7 +572,32 @@ Call Tree
                 _S_SYS_DELAY (2)
                     _builtin_holtek_delay_isr00 (3)
                 _builtin_holtek_delay_isr00 (2)
+                _S_READ_ADC (2)
+                    __DELAYX (3)
+            _S_USER_1S_WORK_PERIOD (1)
+                _S_READ_ADC (2)
+                    __DELAYX (3)
+                _read_temprature (2)
+                    _Crom2Prom (3)
+                    _S_SFUART_SEND (3)
+                _S_SFUART_SEND (2)
+                _PLT0Recive (2)
+                _S_HUSH_COUNT (2)
+                _S_BAT_CHECK (2)
+                _S_MODE_JUDG (2)
+                    _S_CLR_OUTPUT (3)
+                    _S_SYS_DELAY (3)
+                        _builtin_holtek_delay_isr00 (4)
+                    _builtin_holtek_delay_isr00 (3)
+                    _S_READ_ADC (3)
+                        __DELAYX (4)
+    @dummy52
+        _TB1_ISR (0)
+    @dummy12
+        _INT1_ISR (0)
+            _S_SFUART_RXINT (1)
+                __DELAYX (2)
 
-HLINK: Program entry point at section '@code' (address 0) of file 'c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\MAIN.OBJ'
+HLINK: Program entry point at section '@code' (address 0) of file 'c:\users\tech\desktop\testprj\project_5240_c-v1.0.12\Output\MAIN.OBJ'
 
 Total 0 error(s), Total 0 Warning(s)

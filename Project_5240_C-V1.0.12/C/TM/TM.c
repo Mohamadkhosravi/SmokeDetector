@@ -58,7 +58,7 @@ void S_BUZZ_Init(void)
 void S_STM_Init()
 {
 	_stmc0=0b00010000; 
-	_stmc1=0b11000000;
+	_stmc1=0b00000000;
 	_stmal=0x00;
 	_stmah=0x02;
 	

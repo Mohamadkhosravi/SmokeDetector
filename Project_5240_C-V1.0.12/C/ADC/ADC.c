@@ -22,6 +22,7 @@ void S_ADC_Init()
 unsigned int S_READ_ADC(unsigned char CH)
 {
 	unsigned int temp;
+	
 	switch(CH)
 	{
 		case 0:

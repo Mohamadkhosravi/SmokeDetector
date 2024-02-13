@@ -12,9 +12,9 @@
 #define PU_RS_TX	_papu0
 
 //1s
-#define C_LONG_DELAY	122
+#define C_LONG_DELAY	50
 
-char S_SysTimeTask(int time);
+void S_SysTimeTask(void);
 #if _DEBUG
 	void S_RS232_SEND(unsigned char R_RS_DATA);
 	void S_DEBUG_Output(void);
