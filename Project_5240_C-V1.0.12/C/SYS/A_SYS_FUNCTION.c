@@ -216,6 +216,8 @@ void S_MODE_JUDG(void)
 					cunter++;
 					if(cunter>2){
 							_LED_R_ON;
+							GCC_DELAY(1000);
+							_LED_R_OFF;
 							cunter=0;
 						}
 			

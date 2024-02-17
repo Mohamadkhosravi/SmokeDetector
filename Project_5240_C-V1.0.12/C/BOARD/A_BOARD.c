@@ -28,6 +28,7 @@ void S_RAM_Init(unsigned char RAM_BANK)
 //===========================================================
 void S_LED_DRV(void)
 {
+	
 	static int cunter=0;
 	static int flag=0;
 	if(F_LED_ALARM == 1)
@@ -39,18 +40,10 @@ void S_LED_DRV(void)
 			{
 				if(F_LED_HL == 0)
 				{
-					
-			    
-						F_LED_ALARM_INI = 1;
-						F_LED_HL = 1;
-						
-					
-						R_LED_ALARM_DELAY = C_LED_ALARM_DELAY_H;
-					
-						
-						 
-						  		_LED_R_ON;
-					
+					F_LED_ALARM_INI = 1;
+					F_LED_HL = 1;
+					R_LED_ALARM_DELAY = C_LED_ALARM_DELAY_H;
+					 _LED_R_ON;
 				}
 				else
 				{
@@ -62,7 +55,7 @@ void S_LED_DRV(void)
 		}
 		else
 		{
-		flag=0;
+			flag=0;
 			F_LED_ALARM_INI = 1;
 			F_LED_HL = 1;
 			_LED_R_ON;
