@@ -12,7 +12,7 @@
 #define PU_RS_TX	_papu0
 
 //1s
-#define C_LONG_DELAY	50
+#define C_LONG_DELAY	50//this is smoke detect time defult is 100 for 1s
 
 void S_SysTimeTask(void);
 #if _DEBUG

@@ -112,7 +112,7 @@ void main()
 	while(1)
 	{
 		
-		if(firstOneTurnON)
+		if(firstOneTurnON)//when first one turn on wait here for random time
 		{
 		  srand(S_READ_ADC(4));
 		  randomDelay=rand();
@@ -184,7 +184,8 @@ void main()
 			#if _SOFTDEBUG
 				S_SFUART_DEAL(R_SFUART_RXDAT);
 				S_SOFTDEBUG_Output();				//smoke detector workshop debug data output
-			#endif*/
+			#endif
+		*/
 			
 			F_SYS_SLOW = 0;
 			#if _KEY

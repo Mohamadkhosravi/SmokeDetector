@@ -24,7 +24,7 @@ void S_USER_INIT()
 //*********************************************************
 
 
-	//*********************************************************
+//*********************************************************
 	
 
 	
@@ -67,7 +67,7 @@ void S_USER_1S_WORK_PERIOD()
 	static char plt=0;
 	static unsigned int counterPLT=0;
 	int i=0;
-
+//when detect fire wait here ; if power voltage (PLT) is low power led off and reset fire state 
 	if(F_LED_ALARM == 1){
 
      	while(1)
@@ -129,7 +129,7 @@ void S_USER_1S_WORK_PERIOD()
 }
 
 
-void print(unsigned int number){
+void print(unsigned int number){//send ascii number data over uart 
 	unsigned int lastNumber = number;
 	unsigned char len = 0;
 	unsigned int pow = 1;

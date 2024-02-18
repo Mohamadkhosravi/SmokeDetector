@@ -213,14 +213,16 @@ void S_MODE_JUDG(void)
 				{
 					F_NOR_CNT_MODE = 1;
 					R_NOR_DELAY = 0;
+					
+				 //Every 8 seconds, it turns the LED on and off for 2 milliseconds	
 					cunter++;
-					if(cunter>2){
-							_LED_R_ON;
-							GCC_DELAY(1000);
-							_LED_R_OFF;
-							cunter=0;
-						}
-			
+					if(cunter>2){//8sec
+						_LED_R_ON;
+						GCC_DELAY(1000);//2ms
+						_LED_R_OFF;
+						cunter=0;
+					}
+			      //*************************************************************//
 					if(F_BAT_L == 1)		//LOW BATTERY MODE
 					{
 						#if _BUZZ
