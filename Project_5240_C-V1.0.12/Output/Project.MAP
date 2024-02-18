@@ -79,18 +79,18 @@ Input Library File: C:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\L
      00h     0a88h     0ac1h    003ah      CODE               _read_temprature (c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\MAIN.OBJ)
      00h     0ac2h     0ae4h    0023h      CODE               _INT1_ISR (c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\MAIN.OBJ)
      00h     0ae5h     0ae5h    0001h      CODE               _S_USER_8MS_WORK_PERIOD (c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\USERFUNCTION.OBJ)
-     00h     0ae6h     0b44h    005fh      CODE               _S_USER_1S_WORK_PERIOD (c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\USERFUNCTION.OBJ)
-     00h     0b45h     0bebh    00a7h      CODE               _print (c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\USERFUNCTION.OBJ)
-     00h     0bech     0bfch    0011h      CODE               _PLT0Recive (c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\PLT.OBJ)
-     00h     0bfdh     0c06h    000ah      CODE               __DELAYX (C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
-     00h     0c07h     0c14h    000eh      CODE               _builtin_holtek_delay_isr00 (C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
-     00h     0c15h     0c57h    0043h      CODE               _builtin_holtek_divmodsi4_isr00 (C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
-     00h     0c58h     0c7ch    0025h      CODE               _builtin_holtek_divmodhi4_isr00 (C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
-     00h     0c7dh     0c8fh    0013h      CODE               _builtin_holtek_mulhi3_isr00 (C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
-     00h     0c90h     0c96h    0007h      CODE               _srand (C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\v3_lmrsc.lib)
-     00h     0c97h     0ccbh    0035h      CODE               _rand (C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\v3_lmrsc.lib)
-     00h     0ccch     0ceah    001fh      CODE               _builtin_holtek_mulsi3_isr00 (C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
-     00h     0cebh     0cf8h    000eh      CODE               _CROM2PROM (CROM2PROM)
+     00h     0ae6h     0b45h    0060h      CODE               _S_USER_1S_WORK_PERIOD (c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\USERFUNCTION.OBJ)
+     00h     0b46h     0bech    00a7h      CODE               _print (c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\USERFUNCTION.OBJ)
+     00h     0bedh     0bfdh    0011h      CODE               _PLT0Recive (c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\PLT.OBJ)
+     00h     0bfeh     0c07h    000ah      CODE               __DELAYX (C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
+     00h     0c08h     0c15h    000eh      CODE               _builtin_holtek_delay_isr00 (C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
+     00h     0c16h     0c58h    0043h      CODE               _builtin_holtek_divmodsi4_isr00 (C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
+     00h     0c59h     0c7dh    0025h      CODE               _builtin_holtek_divmodhi4_isr00 (C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
+     00h     0c7eh     0c90h    0013h      CODE               _builtin_holtek_mulhi3_isr00 (C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
+     00h     0c91h     0c97h    0007h      CODE               _srand (C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\v3_lmrsc.lib)
+     00h     0c98h     0ccch    0035h      CODE               _rand (C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\v3_lmrsc.lib)
+     00h     0ccdh     0cebh    001fh      CODE               _builtin_holtek_mulsi3_isr00 (C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
+     00h     0cech     0cf9h    000eh      CODE               _CROM2PROM (CROM2PROM)
      00h     0080h     0081h    0002h      DATA     2         @BITDATASEC (c:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\Output\STARTUP1_L.OBJ)
      00h     0082h     0082h    0001h      DATA     591       @data_ra (C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
      00h     0083h     0083h    0001h      DATA     162       @data_rb (C:\Program Files\Holtek MCU Development Tools\HT-IDE3000V8.x\LIB\LIBHOLTEKGCC.LIB)
@@ -221,12 +221,12 @@ Input Library File: C:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\L
 
      Public Symbols Information
      Address            Public by Name
-     0cebh              _Crom2Prom
-     0cebh              _Crom2PromNext
+     0cech              _Crom2Prom
+     0cech              _Crom2PromNext
      0080h[0]           _F_BD_DATA_DONT_SAVE
      0081h[0]           _F_NO_SLEEP
      0ac2h              _INT1_ISR
-     0bech              _PLT0Recive
+     0bedh              _PLT0Recive
      00f1h              _R16_HUSH_DELAY
      00f3h              _R_BAT_ADC
      00f4h              _R_BAT_CK_SPACE
@@ -339,36 +339,36 @@ Input Library File: C:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\L
      04ech              _S_V_CONVER
      0566h              _S_WR_EE
      0a83h              _TB1_ISR
-     0c00h              __DELAYX0
-     0bffh              __DELAYX1
-     0bffh              __DELAYX2
-     0bfeh              __DELAYX3
-     0bfeh              __DELAYX4
-     0bfdh              __DELAYX5
-     0bfdh              __DELAYX6
-     0c09h              __DELAYY0_isr00
-     0c09h              __DELAYY1_isr00
-     0c08h              __DELAYY2_isr00
-     0c08h              __DELAYY3_isr00
-     0c07h              __DELAYY4_isr00
-     0c07h              __DELAYY5_isr00
-     0c7dh              _builtin_holtek_mulhi3_isr00
-     0ccch              _builtin_holtek_mulsi3_isr00
-     0c58h              _builtin_holtek_udivmodhi4_isr00
-     0c15h              _builtin_holtek_udivmodsi4_isr00
+     0c01h              __DELAYX0
+     0c00h              __DELAYX1
+     0c00h              __DELAYX2
+     0bffh              __DELAYX3
+     0bffh              __DELAYX4
+     0bfeh              __DELAYX5
+     0bfeh              __DELAYX6
+     0c0ah              __DELAYY0_isr00
+     0c0ah              __DELAYY1_isr00
+     0c09h              __DELAYY2_isr00
+     0c09h              __DELAYY3_isr00
+     0c08h              __DELAYY4_isr00
+     0c08h              __DELAYY5_isr00
+     0c7eh              _builtin_holtek_mulhi3_isr00
+     0ccdh              _builtin_holtek_mulsi3_isr00
+     0c59h              _builtin_holtek_udivmodhi4_isr00
+     0c16h              _builtin_holtek_udivmodsi4_isr00
      00c7h              _builtin_holtek_udivmodsi4_isr00_2
      00d8h              _firstOneTurnON
      0909h              _main
      00f9h              _mem_temp
      00f8h              _ntemp
-     0b45h              _print
+     0b46h              _print
      00c9h              _print_2
      00fah              _r
-     0c97h              _rand
+     0c98h              _rand
      00d9h              _randomDelay
      00fch              _randx
      0a88h              _read_temprature
-     0c90h              _srand
+     0c91h              _srand
      00fbh              _temp_ADC
      0244h              _temprature1_250table
      00bdh              r10c
@@ -538,34 +538,34 @@ Input Library File: C:\users\tech\desktop\smokedetector\project_5240_c-v1.0.12\L
      0ac2h              _INT1_ISR
      0ae5h              _S_USER_8MS_WORK_PERIOD
      0ae6h              _S_USER_1S_WORK_PERIOD
-     0b45h              _print
-     0bech              _PLT0Recive
-     0bfdh              __DELAYX5
-     0bfdh              __DELAYX6
-     0bfeh              __DELAYX3
-     0bfeh              __DELAYX4
-     0bffh              __DELAYX1
-     0bffh              __DELAYX2
-     0c00h              __DELAYX0
-     0c07h              __DELAYY4_isr00
-     0c07h              __DELAYY5_isr00
-     0c08h              __DELAYY2_isr00
-     0c08h              __DELAYY3_isr00
-     0c09h              __DELAYY0_isr00
-     0c09h              __DELAYY1_isr00
-     0c15h              _builtin_holtek_udivmodsi4_isr00
-     0c58h              _builtin_holtek_udivmodhi4_isr00
-     0c7dh              _builtin_holtek_mulhi3_isr00
-     0c90h              _srand
-     0c97h              _rand
-     0ccch              _builtin_holtek_mulsi3_isr00
-     0cebh              _Crom2PromNext
-     0cebh              _Crom2Prom
+     0b46h              _print
+     0bedh              _PLT0Recive
+     0bfeh              __DELAYX5
+     0bfeh              __DELAYX6
+     0bffh              __DELAYX3
+     0bffh              __DELAYX4
+     0c00h              __DELAYX1
+     0c00h              __DELAYX2
+     0c01h              __DELAYX0
+     0c08h              __DELAYY4_isr00
+     0c08h              __DELAYY5_isr00
+     0c09h              __DELAYY2_isr00
+     0c09h              __DELAYY3_isr00
+     0c0ah              __DELAYY0_isr00
+     0c0ah              __DELAYY1_isr00
+     0c16h              _builtin_holtek_udivmodsi4_isr00
+     0c59h              _builtin_holtek_udivmodhi4_isr00
+     0c7eh              _builtin_holtek_mulhi3_isr00
+     0c91h              _srand
+     0c98h              _rand
+     0ccdh              _builtin_holtek_mulsi3_isr00
+     0cech              _Crom2PromNext
+     0cech              _Crom2Prom
 
 
 ROM Usage Statistics
      Size      Used     Percentage
-     1000h     0cf9h    81%
+     1000h     0cfah    81%
 
 RAM Usage Statistics
     Bank      Size      Used     Percentage

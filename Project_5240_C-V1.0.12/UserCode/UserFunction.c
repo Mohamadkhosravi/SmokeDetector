@@ -76,8 +76,8 @@ void S_USER_1S_WORK_PERIOD()
 		 _pb1=1;
 		 GCC_CLRWDT();
 		 if(PLT0Recive()==0) {plt=1; break;}
-		}
-						
+		}	
+		 _pb1=0;					
 	}
 	if(PLT0Recive()==0)
 	{ 	
