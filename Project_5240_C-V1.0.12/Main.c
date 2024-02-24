@@ -53,7 +53,7 @@ void print(unsigned int number);
 
 unsigned char firstOneTurnON =0;
 unsigned long int randomDelay=0;
-
+unsigned long int timeOUTDelay=10000;
 void main()
 {
 	if(_to==0 || _pdf==0)
@@ -116,7 +116,7 @@ void main()
 		{
 		  srand(S_READ_ADC(4));
 		  randomDelay=rand();
-	      print(randomDelay);	
+	     // print(randomDelay);	
 		  firstOneTurnON=0;
 		  if(randomDelay>10000)randomDelay=randomDelay/100;
 		  if(randomDelay>1000)randomDelay=randomDelay/2;
@@ -124,11 +124,18 @@ void main()
 			while(1){
 				GCC_CLRWDT();
 				--randomDelay;
-				print(randomDelay);
+				--timeOUTDelay;
+			//	print(randomDelay);
 				if(randomDelay<=0)break;
+				if(timeOUTDelay<=0)break;//emergency break
 			}	
 		}
 		
+		
+			S_SFUART_SEND(0x0a);
+		S_SFUART_SEND(PLT0Recive()+0x30);
+		S_SFUART_SEND(PLT1Recive()+0x30);
+			S_SFUART_SEND(0x0a);
 		#if _KEY
 			S_KEY_UPDATE();						//key scan
 			S_KEY_PROCESS();					//key process

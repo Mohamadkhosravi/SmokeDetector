@@ -4,6 +4,15 @@
 #define S0_S1_ON_S2_OFF  _pltc0ofm=0,_pltc0rsp=0;
 #define S0_S1_OFF_S2_ON
 
+#define S0_S2_ON_S1_OFF  _pltc0ofm=1,_pltc0rsp=1;
+#define S0_S1_OFF_S2_ON
+
+
+#define S3_S4_ON_S5_OFF  _pltc1ofm=0,_pltc1rsp=0;
+#define S3_S4_OFF_S5_ON
+
+#define S3_S5_ON_S4_OFF  _pltc1ofm=1,_pltc1rsp=1;
+#define S3_S4_OFF_S5_ON
 
 
 enum{
@@ -47,7 +56,7 @@ PLTDAC0O= ( DAC VDD/26)× PLTDA0L[5:0]*/
 #define PLT_DAC2_VALUE	_pltda2l
 //**************************
 #define PLT_DAC0_Output 
-
+#define PLT_DAC1_Output 
 //********************************
 //Enable Or Disable 
 #define PLT_Comparator_0_Control  _pltc0en 
@@ -76,8 +85,8 @@ frequency is depend on the PLTC0DEB[1:0] bit configuration.*/
 
 //***********************************************
 #define PLT_Comparator_0_Current_Control_Value(value)   (_pltc0is0=(value&0b01),_pltc0is1=(value&0b10)) //_pltc0is1|_pltc0is0
-#define PLT_Comparator_1_Current_Control_Value(value)	_pltc1c=value//_pltc0is1|_pltc0is0
-#define PLT_Comparator_2_Current_Control_Value(value)	_pltc2c=value //_pltc0is1|_pltc0is0
+#define PLT_Comparator_1_Current_Control_Value(value)	(_pltc1is0=(value&0b01),_pltc1is1=(value&0b10))//_pltc0is1|_pltc0is0
+#define PLT_Comparator_2_Current_Control_Value(value)	(_pltc2is0=(value&0b01),_pltc2is1=(value&0b10))//_pltc0is1|_pltc0is0
 //*************************************************
 #define PLT_Comparator0_Or_Comparator1_Output_selection  _pltcxosw
 enum
@@ -87,7 +96,7 @@ enum
 };
 //******************************************
 #define PLT_Comparator_0_Output_Polarity  _pltc0pol
-#define PLT_Comparator_1_Output_Polarity  _pltc0pol
+#define PLT_Comparator_1_Output_Polarity  _pltc1pol
 enum{
   Non_Invert,
   Invert
@@ -104,7 +113,7 @@ enum{
 //***************************************
 //Enable Or Disable 
 #define PLT_OPAMP_0_CONTROL _pltc0en
-
+#define PLT_OPAMP_1_CONTROL _pltc1en
 //***************************************
 
 #define PLT_OPA_Output_Status  _pltaout
@@ -139,10 +148,18 @@ enum
 };
 //***************************************
 //_pltaof5|_pltaof4||_pltaof3||_pltaof2||_pltaof1||_pltaof0
-#define PLT_Input_Offset_Voltage_Calibration_Value(value) _pltavos=valu&&0b00011111
-
+#define PLTA_Input_Offset_Voltage_Calibration_Value(value) _pltavos=valu&&0b00011111
+#define PLT0_Input_Offset_Voltage_Calibration_Value(value) _plt0vos=valu&&0b00011111
+#define PLT0_Input_Offset_Voltage_Calibration_Value(value) _plt1vos=valu&&0b00011111
 //*******************
 
-char PLT0Receive(void);
+unsigned int VC0OS1;
+unsigned int VC0OS2;
+unsigned int VC1OS1;
+unsigned int VC1OS2;
 
+
+char PLT0InputOffsetCalibration(void);
+char PLT0Receive(void);
+char PLT1Recive(void);
 #endif

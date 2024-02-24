@@ -67,7 +67,8 @@ void S_USER_1S_WORK_PERIOD()
 	static char plt=0;
 	static unsigned int counterPLT=0;
 	int i=0;
-//when detect fire wait here ; if power voltage (PLT) is low power led off and reset fire state 
+	//when detect fire wait here ; if power voltage (PLT) is low power led off and reset fire state 
+
 	if(F_LED_ALARM == 1){
 
      	while(1)
@@ -79,7 +80,7 @@ void S_USER_1S_WORK_PERIOD()
 		}	
 		 _pb1=0;					
 	}
-	if(PLT0Recive()==0)
+	if((PLT0Recive()==0)&&(PLT1Recive()==0))
 	{ 	
 	  plt=1;			
 	}
@@ -91,7 +92,7 @@ void S_USER_1S_WORK_PERIOD()
   		{
 			_LED_R_OFF;
 			GCC_CLRWDT();
-			if(PLT0Recive())
+			if((PLT0Recive())&&(PLT1Recive()))
 			{
 		 	  counterPLT++;	
 			}
