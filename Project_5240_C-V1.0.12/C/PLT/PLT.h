@@ -132,7 +132,9 @@ enum{
  _2MHz
 };
 //***************************************
-#define PLT_Voltage_Calibration_Mode_Selection	_pltaofm
+#define PLTA_Voltage_Calibration_Mode_Selection	_pltaofm
+#define PLT0_Voltage_Calibration_Mode_Selection	_pltc0ofm
+#define PLT1_Voltage_Calibration_Mode_Selection	_pltc1ofm
 enum
 {
  Normal_Operation,
@@ -148,18 +150,15 @@ enum
 };
 //***************************************
 //_pltaof5|_pltaof4||_pltaof3||_pltaof2||_pltaof1||_pltaof0
-#define PLTA_Input_Offset_Voltage_Calibration_Value(value) _pltavos=valu&&0b00011111
-#define PLT0_Input_Offset_Voltage_Calibration_Value(value) _plt0vos=valu&&0b00011111
-#define PLT0_Input_Offset_Voltage_Calibration_Value(value) _plt1vos=valu&&0b00011111
+#define PLTA_Input_Offset_Voltage_Calibration_Value(value) _pltavos=value&0b00011111
+#define PLT0_Input_Offset_Voltage_Calibration_Value(value) _pltc0vos=value&0b00011111
+#define PLT1_Input_Offset_Voltage_Calibration_Value(value) _pltc1vos=value&0b00011111
 //*******************
 
-unsigned int VC0OS1;
-unsigned int VC0OS2;
-unsigned int VC1OS1;
-unsigned int VC1OS2;
 
 
-char PLT0InputOffsetCalibration(void);
+int PLT0InputOffsetCalibration(void);
+int PLT1InputOffsetCalibration(void);
 char PLT0Receive(void);
 char PLT1Recive(void);
 #endif

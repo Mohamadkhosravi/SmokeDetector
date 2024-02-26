@@ -54,6 +54,8 @@ void print(unsigned int number);
 unsigned char firstOneTurnON =0;
 unsigned long int randomDelay=0;
 unsigned long int timeOUTDelay=10000;
+int offset0;
+int offset1;
 void main()
 {
 	if(_to==0 || _pdf==0)
@@ -105,15 +107,21 @@ void main()
 		_LED_R_ON;
 		_LED_R_OFF;
 		
-	firstOneTurnON=1;	
+		offset0 =PLT0InputOffsetCalibration();
+		offset1 =PLT1InputOffsetCalibration();
+	
+		firstOneTurnON=1;
+		
+	
+		
 	}
-
 
 	while(1)
 	{
-		
+	
 		if(firstOneTurnON)//when first one turn on wait here for random time
 		{
+			
 		  srand(S_READ_ADC(4));
 		  randomDelay=rand();
 	     // print(randomDelay);	
@@ -128,14 +136,18 @@ void main()
 			//	print(randomDelay);
 				if(randomDelay<=0)break;
 				if(timeOUTDelay<=0)break;//emergency break
+			
 			}	
 		}
+	
 		
-		
+            print(offset0);
+			print(offset1);
 			S_SFUART_SEND(0x0a);
-		S_SFUART_SEND(PLT0Recive()+0x30);
-		S_SFUART_SEND(PLT1Recive()+0x30);
+			S_SFUART_SEND(PLT0Recive()+0x30);
+			S_SFUART_SEND(PLT1Recive()+0x30);
 			S_SFUART_SEND(0x0a);
+			
 		#if _KEY
 			S_KEY_UPDATE();						//key scan
 			S_KEY_PROCESS();					//key process

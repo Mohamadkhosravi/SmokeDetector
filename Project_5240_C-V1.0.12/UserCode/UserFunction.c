@@ -64,7 +64,7 @@ void S_USER_1S_WORK_PERIOD()
 {
 	
 	//USER 1s CODE START
-	static char plt=0;
+	static char plt0=0;
 	static unsigned int counterPLT=0;
 	int i=0;
 	//when detect fire wait here ; if power voltage (PLT) is low power led off and reset fire state 
@@ -76,23 +76,25 @@ void S_USER_1S_WORK_PERIOD()
 		 _LED_R_ON;	
 		 _pb1=1;
 		 GCC_CLRWDT();
-		 if(PLT0Recive()==0) {plt=1; break;}
+		 if(PLT0Recive()==0) {plt0=1; break;}
 		}	
 		 _pb1=0;					
 	}
-	if((PLT0Recive()==0)&&(PLT1Recive()==0))
+/*	if((PLT0Recive()==0)&&(PLT1Recive()==0))*/
+	if((PLT0Recive()==0))
 	{ 	
-	  plt=1;			
+	  plt0=1;			
 	}
 	
-    if(plt)
+    if(plt0)
 	{
 	  
   		while(1)
   		{
 			_LED_R_OFF;
 			GCC_CLRWDT();
-			if((PLT0Recive())&&(PLT1Recive()))
+			/*if((PLT0Recive())&&(PLT1Recive()))*/
+			if(PLT1Recive())
 			{
 		 	  counterPLT++;	
 			}
@@ -102,7 +104,7 @@ void S_USER_1S_WORK_PERIOD()
 			}	
 	        
 		  	if(counterPLT>20){
-		  		plt=0;
+		  		plt0=0;
 		  		counterPLT=0;
 				F_ONESEC=0;
 				S_HUSH_COUNT();
@@ -137,6 +139,10 @@ void print(unsigned int number){//send ascii number data over uart
 	unsigned int digit = 0;
 	
 	S_SFUART_SEND(0x0a);
+	if (lastNumber<=0){
+	S_SFUART_SEND(0+30);
+	S_SFUART_SEND(0x0a);	
+		return 0;}
 	while (lastNumber > 0)
 	{
 		len++;    
