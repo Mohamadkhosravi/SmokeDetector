@@ -131,36 +131,36 @@ void S_USER_1S_WORK_PERIOD()
 	return ;
 }
 
-
-void print(unsigned int number){//send ascii number data over uart 
-	unsigned int lastNumber = number;
-	unsigned char len = 0;
-	unsigned int pow = 1;
-	unsigned int digit = 0;
-	
-	S_SFUART_SEND(0x0a);
-	if (lastNumber<=0){
-	S_SFUART_SEND(0+30);
-	S_SFUART_SEND(0x0a);	
-		return 0;}
-	while (lastNumber > 0)
-	{
-		len++;    
-		pow = pow * 10;
-		lastNumber = lastNumber / 10;    
-	}
-	pow = pow / 10;
-	lastNumber = number;
-	while (1)
-	{
-		len--;
-		digit = lastNumber / pow;
-		lastNumber = lastNumber - (digit * pow);
-		S_SFUART_SEND(digit + 0x30);
-		pow = pow / 10;
-		if (len == 0) break;   
-	
-	}
-	
-	S_SFUART_SEND(0x0a);
-}	
+//
+//void print(unsigned int number){//send ascii number data over uart 
+//	unsigned int lastNumber = number;
+//	unsigned char len = 0;
+//	unsigned int pow = 1;
+//	unsigned int digit = 0;
+//	
+//	S_SFUART_SEND(0x0a);
+//	if (lastNumber<=0){
+//	S_SFUART_SEND(0+30);
+//	S_SFUART_SEND(0x0a);	
+//		return 0;}
+//	while (lastNumber > 0)
+//	{
+//		len++;    
+//		pow = pow * 10;
+//		lastNumber = lastNumber / 10;    
+//	}
+//	pow = pow / 10;
+//	lastNumber = number;
+//	while (1)
+//	{
+//		len--;
+//		digit = lastNumber / pow;
+//		lastNumber = lastNumber - (digit * pow);
+//		S_SFUART_SEND(digit + 0x30);
+//		pow = pow / 10;
+//		if (len == 0) break;   
+//	
+//	}
+//	
+//	S_SFUART_SEND(0x0a);
+//}	

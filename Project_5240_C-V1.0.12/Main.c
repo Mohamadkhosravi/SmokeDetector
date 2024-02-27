@@ -121,7 +121,6 @@ void main()
 	
 		if(firstOneTurnON)//when first one turn on wait here for random time
 		{
-			
 		  srand(S_READ_ADC(4));
 		  randomDelay=rand();
 	     // print(randomDelay);	
