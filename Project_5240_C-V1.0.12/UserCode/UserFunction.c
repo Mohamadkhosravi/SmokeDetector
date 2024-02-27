@@ -80,21 +80,21 @@ void S_USER_1S_WORK_PERIOD()
 		}	
 		 _pb1=0;					
 	}
-/*	if((PLT0Recive()==0)&&(PLT1Recive()==0))*/
+
 	if((PLT0Recive()==0))
 	{ 	
 	  plt0=1;			
 	}
 	
-    if(plt0)
+    if(plt0)//low hystersise 12V for turn off mcu
 	{
 	  
   		while(1)
   		{
 			_LED_R_OFF;
 			GCC_CLRWDT();
-			/*if((PLT0Recive())&&(PLT1Recive()))*/
-			if(PLT1Recive())
+		
+			if(PLT1Recive())//high hystersise 16V for exite from loop and turn on
 			{
 		 	  counterPLT++;	
 			}

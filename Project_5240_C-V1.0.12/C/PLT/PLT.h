@@ -155,8 +155,8 @@ enum
 #define PLT1_Input_Offset_Voltage_Calibration_Value(value) _pltc1vos=value&0b00011111
 //*******************
 
-
-
+int PLT0AmplifierInputOffsetCalibration(void);
+int PLT1AmplifierInputOffsetCalibration(void);
 int PLT0InputOffsetCalibration(void);
 int PLT1InputOffsetCalibration(void);
 char PLT0Receive(void);

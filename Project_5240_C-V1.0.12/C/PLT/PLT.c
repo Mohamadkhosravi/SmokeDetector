@@ -55,6 +55,49 @@ int PLT0InputOffsetCalibration(void){
 	
      return (value);
 };
+int PLT0AmplifierInputOffsetCalibration(void)
+{
+	int repeat=0;	
+	static unsigned int value =0;
+	PLT0_Voltage_Calibration_Mode_Selection = Offset_Calibration_Mode;
+	S0_S2_ON_S1_OFF;
+	PLT0_Input_Offset_Voltage_Calibration_Value(0);
+	value=1;
+	 
+	for(repeat=0;repeat<2;repeat++){
+		
+		value+=repeat;
+		PLT0_Input_Offset_Voltage_Calibration_Value(value);
+		VC0OS1=value;
+		if( PLT_Comparator_0_Output_Value){
+			repeat=0;
+			break;
+		}
+	
+	}
+	repeat=0;
+	value=0b11111;
+	for(repeat=0;repeat<4;repeat++){
+		
+		value-=repeat;
+		PLT0_Input_Offset_Voltage_Calibration_Value(value);
+		VC0OS2=value;
+		if( PLT_Comparator_0_Output_Value)
+		{	
+			repeat=0;
+			break;
+		}
+	 
+	}
+	 value= (int)(VC0OS1+VC0OS2)/2;
+	 PLT0_Input_Offset_Voltage_Calibration_Value(value);
+	
+     return (value);
+	
+	
+}
+
+
 int PLT1InputOffsetCalibration(void){
 	
 	int repeat=0;	
@@ -66,7 +109,7 @@ int PLT1InputOffsetCalibration(void){
 	PLT1_Input_Offset_Voltage_Calibration_Value(0);
 	value=1;
 	 
-	for(repeat=0;repeat<2;repeat++){
+	for(repeat=0;repeat<3;repeat++){
 		
 		value+=repeat;
 		PLT1_Input_Offset_Voltage_Calibration_Value(value);
@@ -80,7 +123,7 @@ int PLT1InputOffsetCalibration(void){
 	}
 	repeat=0;
 	value=0b11111;
-	for(repeat=0;repeat<4;repeat++){
+	for(repeat=0;repeat<5;repeat++){
 		
 		value-=repeat;
 		PLT1_Input_Offset_Voltage_Calibration_Value(value);

@@ -141,12 +141,12 @@ void main()
 		}
 	
 		
-            print(offset0);
+         /*   print(offset0);
 			print(offset1);
 			S_SFUART_SEND(0x0a);
 			S_SFUART_SEND(PLT0Recive()+0x30);
 			S_SFUART_SEND(PLT1Recive()+0x30);
-			S_SFUART_SEND(0x0a);
+			S_SFUART_SEND(0x0a);*/
 			
 		#if _KEY
 			S_KEY_UPDATE();						//key scan
