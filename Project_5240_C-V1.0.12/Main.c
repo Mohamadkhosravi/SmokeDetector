@@ -32,6 +32,9 @@
 #include "UserISR.h"
 #include "PLT.h"
 
+#include <time.h>
+
+
 void read_temprature(void);
 const unsigned char temprature1_250table[120]=
 {
@@ -56,6 +59,7 @@ unsigned long int randomDelay=0;
 unsigned long int timeOUTDelay=10000;
 int offset0;
 int offset1;
+unsigned char i=0;
 void main()
 {
 	if(_to==0 || _pdf==0)
@@ -111,41 +115,45 @@ void main()
 		offset1 =PLT1InputOffsetCalibration();
 	
 		firstOneTurnON=1;
-		
-	
+		_lvden=0;
+
 		
 	}
 
 	while(1)
 	{
-	
-		if(firstOneTurnON)//when first one turn on wait here for random time
+		
+	    _lvden=0;
+     	if(firstOneTurnON)//when first one turn on wait here for random time
 		{
-		  srand(S_READ_ADC(4));
-		  randomDelay=rand();
-	     // print(randomDelay);	
-		  firstOneTurnON=0;
-		  if(randomDelay>10000)randomDelay=randomDelay/100;
-		  if(randomDelay>1000)randomDelay=randomDelay/2;
+			for(i=0;i<=5;i++)
+			{
+			 
+			
+			    GCC_DELAY(10);
+			  	randomDelay=(S_READ_ADC(6)&0b00000011)<<(2*i);
+			}
+			srand(randomDelay);
+			firstOneTurnON=0;
+			randomDelay=rand();
 		  
 			while(1){
 				GCC_CLRWDT();
 				--randomDelay;
 				--timeOUTDelay;
-			//	print(randomDelay);
 				if(randomDelay<=0)break;
-				if(timeOUTDelay<=0)break;//emergency break
-			
 			}	
 		}
 	
 		
-         /*   print(offset0);
-			print(offset1);
-			S_SFUART_SEND(0x0a);
+           /* print(offset0);
+			print(offset1);*/
+			/*S_SFUART_SEND(0x0a);
+			S_SFUART_SEND(0x50);
 			S_SFUART_SEND(PLT0Recive()+0x30);
 			S_SFUART_SEND(PLT1Recive()+0x30);
-			S_SFUART_SEND(0x0a);*/
+			S_SFUART_SEND(0x0a);
+		*/
 			
 		#if _KEY
 			S_KEY_UPDATE();						//key scan
@@ -192,7 +200,7 @@ void main()
 			S_MODE_JUDG();							//MCU mode processing
 			//USER CODE START
 			S_USER_1S_WORK_PERIOD();
-				ntemp=T_AD;
+			ntemp=T_AD;
 		    read_temprature();
 			//USER CODE END
 		/*	

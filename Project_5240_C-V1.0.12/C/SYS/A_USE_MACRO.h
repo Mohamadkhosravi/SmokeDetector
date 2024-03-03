@@ -15,8 +15,8 @@
 #define		_SMJUST			0			//BD with smoke							1-ON  0-OFF
 #define		_V_CONVER		1			//voltage compensation					1-ON  0-OFF
 #define		_UL_BAT_L		1			//Internal resistance detection			1-ON  0-OFF
-#define		_DEBUG			0			//Debug serial port						1-ON  0-OFF
-#define		_SOFTDEBUG		0			//smoke detector workshop debug driver	1-ON  0-OFF
+#define		_DEBUG			1			//Debug serial port						1-ON  0-OFF
+#define		_SOFTDEBUG		1			//smoke detector workshop debug driver	1-ON  0-OFF
 #define		_NO_SLEEP		1
 
 //ISR ENABLE/DISABLE
