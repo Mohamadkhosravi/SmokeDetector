@@ -128,31 +128,33 @@ void main()
 		{
 			for(i=0;i<=5;i++)
 			{
-			 
-			
 			    GCC_DELAY(10);
 			  	randomDelay=(S_READ_ADC(6)&0b00000011)<<(2*i);
 			}
 			srand(randomDelay);
 			firstOneTurnON=0;
 			randomDelay=rand();
-		  
+			while(randomDelay>10000)
+			{
+				randomDelay=(int)randomDelay/2;	
+			}
 			while(1){
+				
 				GCC_CLRWDT();
 				--randomDelay;
 				--timeOUTDelay;
-				if(randomDelay<=0)break;
+				if((randomDelay<=0)||(timeOUTDelay<0))break;
 			}	
 		}
 	
 		
-           /* print(offset0);
-			print(offset1);*/
-			/*S_SFUART_SEND(0x0a);
-			S_SFUART_SEND(0x50);
-			S_SFUART_SEND(PLT0Recive()+0x30);
-			S_SFUART_SEND(PLT1Recive()+0x30);
-			S_SFUART_SEND(0x0a);
+		/* print(offset0);
+		print(offset1);*/
+		/*S_SFUART_SEND(0x0a);
+		S_SFUART_SEND(0x50);
+		S_SFUART_SEND(PLT0Recive()+0x30);
+		S_SFUART_SEND(PLT1Recive()+0x30);
+		S_SFUART_SEND(0x0a);
 		*/
 			
 		#if _KEY
